@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Clairo · Workshops de eCommerce con criterio, claridad y acción</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Clairo es el lugar donde conviertes tus ideas y pasiones en oportunidades reales de eCommerce a través de workshops prácticos, en vivo y pensados para personas creativas.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body
+  class="bg-white text-stone-950 antialiased min-h-screen flex flex-col font-sans selection:bg-orange-500 selection:text-white">
+
+  <!-- Header global fijo -->
+  <header class="site-header">
+    <nav class="site-header-inner">
+      <div
+        class="glass-nav flex items-center justify-between border-white/10 border rounded-full px-4 py-2 shadow-[0_8px_32px_rgba(0,0,0,0.4)] backdrop-blur-xl">
+        <!-- Logo a la izquierda -->
+        <a href="index.html" class="flex items-center gap-2 pr-4">
+          <img src="img/logo.svg" alt="Clairo" class="h-5 w-auto">
+        </a>
+
+        <!-- Enlaces a la derecha (desktop) + botón móvil -->
+        <div class="flex items-center gap-2">
+          <div class="hidden md:flex items-center gap-1">
+            <a href="index.html"
+              class="text-[11px] font-medium text-white/80 hover:text-white uppercase tracking-wider px-3 py-1.5 rounded-full hover:bg-white/10 transition-all font-mono">Home</a>
+            <a href="sobre-clairo.html"
+              class="text-[11px] font-medium text-white/80 hover:text-white uppercase tracking-wider px-3 py-1.5 rounded-full hover:bg-white/10 transition-all font-mono">Sobre
+              Clairo</a>
+            <a href="workshops.html"
+              class="text-[11px] font-medium text-white/80 hover:text-white uppercase tracking-wider px-3 py-1.5 rounded-full hover:bg-white/10 transition-all font-mono">Workshops</a>
+            <a href="metodologia.html"
+              class="text-[11px] font-medium text-white/80 hover:text-white uppercase tracking-wider px-3 py-1.5 rounded-full hover:bg-white/10 transition-all font-mono">Metodología</a>
+            <a href="casos.html"
+              class="text-[11px] font-medium text-white/80 hover:text-white uppercase tracking-wider px-3 py-1.5 rounded-full hover:bg-white/10 transition-all font-mono">Casos</a>
+            <a href="contacto.html"
+              class="text-[11px] font-medium text-white/80 hover:text-white uppercase tracking-wider px-3 py-1.5 rounded-full hover:bg-white/10 transition-all font-mono bg-orange-500/20">Contacto</a>
+          </div>
+
+          <button class="md:hidden p-2 text-white mobile-menu-button" aria-label="Abrir menú de navegación">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 5h16M4 12h16M4 19h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Menú móvil flotante -->
+  <div
+    class="mobile-menu hidden fixed top-20 left-1/2 -translate-x-1/2 w-[90%] max-w-md z-50 glass-nav rounded-2xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)] backdrop-blur-xl p-6">
+    <div class="flex flex-col gap-4">
+      <a href="index.html"
+        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-mono">Home</a>
+      <a href="sobre-clairo.html"
+        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-mono">Sobre
+        Clairo</a>
+      <a href="workshops.html"
+        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-mono">Workshops</a>
+      <a href="metodologia.html"
+        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-mono">Metodología</a>
+      <a href="casos.html"
+        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-mono">Casos</a>
+      <a href="contacto.html"
+        class="text-sm font-medium text-white uppercase tracking-wider py-2 px-4 rounded-full bg-orange-500/20 hover:bg-orange-500/30 transition-all font-mono">Contacto</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero"
+    class="relative w-full min-h-[780px] overflow-hidden bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 hero-container pt-28 pb-24">
+    <div class="absolute inset-0 bg-black/30"></div>
+    <div class="hero-orange-gradient absolute bottom-0 left-0 right-0 h-64 pointer-events-none"></div>
+
+    <!-- Animación de burbujas ascendentes -->
+    <div class="hero-bubbles absolute inset-0 pointer-events-none z-10">
+      <div class="bubble bubble-1"></div>
+      <div class="bubble bubble-2"></div>
+      <div class="bubble bubble-3"></div>
+      <div class="bubble bubble-4"></div>
+      <div class="bubble bubble-5"></div>
+      <div class="bubble bubble-6"></div>
+      <div class="bubble bubble-7"></div>
+      <div class="bubble bubble-8"></div>
+      <div class="bubble bubble-9"></div>
+      <div class="bubble bubble-10"></div>
+      <div class="bubble bubble-11"></div>
+      <div class="bubble bubble-12"></div>
+      <div class="bubble bubble-13"></div>
+      <div class="bubble bubble-14"></div>
+      <div class="bubble bubble-15"></div>
+      <div class="bubble bubble-16"></div>
+      <div class="bubble bubble-17"></div>
+      <div class="bubble bubble-18"></div>
+      <div class="bubble bubble-19"></div>
+      <div class="bubble bubble-20"></div>
+      <div class="bubble bubble-21"></div>
+      <div class="bubble bubble-22"></div>
+      <div class="bubble bubble-23"></div>
+      <div class="bubble bubble-24"></div>
+      <div class="bubble bubble-25"></div>
+      <div class="bubble bubble-26"></div>
+      <div class="bubble bubble-27"></div>
+      <div class="bubble bubble-28"></div>
+      <div class="bubble bubble-29"></div>
+      <div class="bubble bubble-30"></div>
+      <div class="bubble bubble-31"></div>
+      <div class="bubble bubble-32"></div>
+      <div class="bubble bubble-33"></div>
+      <div class="bubble bubble-34"></div>
+      <div class="bubble bubble-35"></div>
+      <div class="bubble bubble-36"></div>
+      <div class="bubble bubble-37"></div>
+      <div class="bubble bubble-38"></div>
+      <div class="bubble bubble-39"></div>
+      <div class="bubble bubble-40"></div>
+    </div>
+
+    <div class="relative z-20 container-max px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Columna izquierda -->
+      <div class="space-y-8 text-white max-w-xl">
+        <div
+          class="hero-badge inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-md relative overflow-hidden">
+          <div class="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse"></div>
+          <span
+            class="text-[10px] font-mono font-medium text-white/70 uppercase tracking-widest relative z-10">Workshops de
+            eCommerce para gente creativa</span>
+        </div>
+        <h1
+          class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-white/70 tracking-tight leading-[1.02] drop-shadow-2xl">
+          Convierte lo que te mueve en un <span
+            style="color: #FF9D00; background: none; -webkit-background-clip: unset; background-clip: unset;">eCommerce</span>
+          con sentido
+        </h1>
+        <p class="text-white/80 text-lg sm:text-xl font-medium leading-relaxed">
+          Si tienes ideas, curiosidad o una pasión que no sabes cómo convertir en ingresos, aquí es donde se ordenan
+          las piezas. Clairo te acompaña a transformar intuiciones en oportunidades reales de eCommerce, con criterio,
+          estructura y acción.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="workshops.html"
+            class="bg-orange-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-orange-600 transition-all shadow-xl hover:scale-105 text-center"
+            aria-label="Ver todos los workshops disponibles en Clairo">
+            Ver próximos workshops
+          </a>
+          <a href="#como-funciona"
+            class="bg-white/10 backdrop-blur-md text-white px-8 py-4 rounded-full font-semibold border border-white/20 hover:bg-white/20 transition-all text-center">
+            Cómo funciona Clairo
+          </a>
+        </div>
+        <p class="text-xs font-mono uppercase tracking-[0.2em] text-white/70">
+          Workshops en vivo · Grupos reducidos · Metodología 100% práctica
+        </p>
+      </div>
+
+      <!-- Columna derecha (visual placeholder) -->
+      <div class="hidden lg:flex justify-end">
+        <div
+          class="relative w-full max-w-md aspect-[4/5] rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden shadow-[0_24px_80px_rgba(0,0,0,0.6)]">
+          <div class="absolute inset-0 schematic-grid opacity-40"></div>
+          <div class="relative h-full flex flex-col justify-between p-6">
+            <div>
+              <p class="text-sm font-mono uppercase tracking-[0.25em] text-white/70 mb-2">Personas creando</p>
+              <h2 class="text-2xl font-semibold text-white mb-3">
+                Espacio para pensar tu eCommerce con calma y criterio
+              </h2>
+              <p class="text-base text-white/70 mb-4">
+                Imagina un grupo reducido de personas creativas, cada una trabajando en su caso real,
+                tomando decisiones claras sobre qué construir y qué descartar.
+              </p>
+
+              <ul class="space-y-2.5 text-lg text-white/80 mb-4">
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-6 h-6 text-orange-500 mt-0.5 shrink-0" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Metodología práctica aplicada a casos reales</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-6 h-6 text-orange-500 mt-0.5 shrink-0" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Decisiones claras en cada sesión</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-6 h-6 text-orange-500 mt-0.5 shrink-0" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Acompañamiento personalizado</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-6 h-6 text-orange-500 mt-0.5 shrink-0" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Herramientas modernas de validación</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="space-y-3 text-base text-white/75">
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-mono uppercase tracking-[0.2em] text-white/60">Formato</span>
+                <span>Workshops en vivo, online</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-mono uppercase tracking-[0.2em] text-white/60">Personas</span>
+                <span>Grupos reducidos</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-mono uppercase tracking-[0.2em] text-white/60">Metodología</span>
+                <span>Aplicada sobre tu caso real</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="w-full bg-white relative z-10">
+
+    <!-- Trust strip / highlights -->
+    <section id="trust-strip" class="py-8 md:py-12 px-6 md:px-8 border-b border-stone-200 bg-stone-50">
+      <div class="container-max">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div
+            class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm hover:shadow-md transition-shadow text-left md:text-center">
+            <h3 class="text-lg font-semibold text-stone-950 mb-2">Workshops en vivo</h3>
+            <p class="text-stone-600 text-sm">
+              Nada de vídeos eternos que se quedan en la teoría. Trabajamos sobre tu caso real, en directo.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm hover:shadow-md transition-shadow text-left md:text-center">
+            <h3 class="text-lg font-semibold text-stone-950 mb-2">Metodología accionable</h3>
+            <p class="text-stone-600 text-sm">
+              Cada sesión termina con decisiones claras y próximos pasos, no con más dudas.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm hover:shadow-md transition-shadow text-left md:text-center">
+            <h3 class="text-lg font-semibold text-stone-950 mb-2">Pensado para personas creativas</h3>
+            <p class="text-stone-600 text-sm">
+              No necesitas ser experto en eCommerce, solo traer tus ideas, tu historia y tus ganas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workshops destacados -->
+    <section id="workshops-destacados" class="section-padding bg-white">
+      <div class="container-max">
+        <div class="max-w-3xl mx-auto text-center mb-12">
+          <h2 class="text-4xl md:text-5xl font-bold text-stone-950 mb-4">
+            Workshops diseñados para tomar decisiones claras
+          </h2>
+          <p class="text-xl text-stone-600">
+            Cada workshop está pensado para resolver un bloque concreto en tu camino de eCommerce: desde encontrar
+            oportunidades hasta diseñar un modelo de negocio que tenga sentido para ti.
+          </p>
+        </div>
+
+        <div class="text-center mb-8">
+          <a href="workshops.html" class="btn-secondary inline-block">
+            Ver todos los workshops
+          </a>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Workshop 1 -->
+          <article class="card-workshop bg-white rounded-2xl p-6 flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-semibold text-stone-950 mb-2">
+                Convierte tu pasión en un eCommerce
+              </h3>
+              <p class="text-sm font-medium text-orange-600 mb-3">
+                Encuentra oportunidades reales de eCommerce a partir de lo que ya te apasiona.
+              </p>
+              <p class="text-stone-600 text-sm mb-4">
+                En este workshop conectas tus pasiones con lo que el mercado realmente busca, validas ideas con
+                herramientas modernas y sales con una oportunidad clara sobre la que avanzar.
+              </p>
+              <div class="flex flex-col gap-1 text-xs text-stone-500 mb-4">
+                <span>1 sesión · 180 minutos · En vivo</span>
+                <span>Próxima fecha: Próximamente</span>
+              </div>
+            </div>
+            <a href="workshop-convierte-tu-pasion-en-un-ecommerce.html"
+              class="text-orange-500 font-semibold hover:underline text-sm mt-2">
+              Ver detalles →
+            </a>
+          </article>
+
+          <!-- Workshop 2 -->
+          <article class="card-workshop bg-white rounded-2xl p-6 flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-semibold text-stone-950 mb-2">
+                Diseña tu modelo de negocio para eCommerce
+              </h3>
+              <p class="text-sm font-medium text-orange-600 mb-3">
+                Pasa de una idea suelta a un modelo de negocio que puedas explicar, validar y hacer crecer.
+              </p>
+              <p class="text-stone-600 text-sm mb-4">
+                Trabajamos tu propuesta de valor, a quién ayudas, cómo llegas a esas personas y cómo conviertes esa
+                relación en ingresos sostenibles.
+              </p>
+              <div class="flex flex-col gap-1 text-xs text-stone-500 mb-4">
+                <span># sesiones · X minutos · En vivo</span>
+                <span>Próxima fecha: Próximamente</span>
+              </div>
+            </div>
+            <a href="workshop-disena-tu-modelo-de-negocio.html"
+              class="text-orange-500 font-semibold hover:underline text-sm mt-2">
+              Ver detalles →
+            </a>
+          </article>
+
+          <!-- Próximo workshop -->
+          <article class="card-workshop bg-stone-950 text-white rounded-2xl p-6 flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-semibold mb-2">
+                Próximo workshop Clairo
+              </h3>
+              <p class="text-sm font-medium text-orange-300 mb-3">
+                Nuevas ediciones y formatos para seguir profundizando en tu eCommerce.
+              </p>
+              <p class="text-white/80 text-sm mb-4">
+                Déjanos tu correo para enterarte antes que nadie de los próximos workshops y nuevas fechas.
+              </p>
+              <div class="flex flex-col gap-1 text-xs text-white/70 mb-4">
+                <span>Próximamente · En vivo</span>
+              </div>
+            </div>
+            <a href="#newsletter" class="text-orange-300 font-semibold hover:underline text-sm mt-2">
+              Quiero enterarme primero →
+            </a>
+          </article>
+        </div>
+
+        <div class="text-center mt-12">
+          <a href="workshops.html" class="btn-primary inline-block">
+            Ver todos los workshops
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cómo funciona Clairo -->
+    <section id="como-funciona" class="section-padding bg-stone-50">
+      <div class="container-max">
+        <div class="max-w-4xl mx-auto text-center mb-12">
+          <h2 class="text-4xl md:text-5xl font-bold text-stone-950 mb-6">
+            Cómo funciona Clairo
+          </h2>
+          <p class="text-xl text-stone-600 leading-relaxed">
+            Tu eCommerce no nace de una idea brillante al azar, sino de una serie de buenas decisiones encadenadas. Los
+            workshops de Clairo existen para que esas decisiones no dependan de la suerte.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div class="text-left md:text-center">
+            <div class="text-4xl font-bold text-orange-500 mb-4">01</div>
+            <h3 class="text-xl font-semibold mb-3">Eliges el workshop que responde a tu momento</h3>
+            <p class="text-stone-600">
+              ¿Estás buscando oportunidades? ¿Quieres diseñar tu modelo de negocio? Cada workshop resuelve una pregunta
+              clave para que no te pierdas en mil cursos genéricos.
+            </p>
+          </div>
+          <div class="text-left md:text-center">
+            <div class="text-4xl font-bold text-orange-500 mb-4">02</div>
+            <h3 class="text-xl font-semibold mb-3">Trabajamos en vivo sobre tu caso real</h3>
+            <p class="text-stone-600">
+              Nada de plantillas huecas. Traes tus ideas, contexto y dudas, y las convertimos en decisiones concretas
+              usando método, criterio y herramientas como Perplexity.
+            </p>
+          </div>
+          <div class="text-left md:text-center">
+            <div class="text-4xl font-bold text-orange-500 mb-4">03</div>
+            <h3 class="text-xl font-semibold mb-3">Sales con un mapa claro de próximos pasos</h3>
+            <p class="text-stone-600">
+              Te vas con claridad sobre qué hacer después, qué tiene sentido priorizar y qué es mejor descartar. Menos
+              ruido, más foco.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a href="workshops.html" class="btn-primary inline-block">
+            Ver workshops disponibles
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Para quién es -->
+    <section id="para-quien" class="section-padding">
+      <div class="container-max">
+        <div class="max-w-3xl mx-auto">
+          <h2 class="text-4xl md:text-5xl font-bold text-stone-950 mb-4 text-center">
+            Clairo es para ti si…
+          </h2>
+          <p class="text-xl text-stone-600 mb-8 text-center">
+            No estás buscando una fórmula mágica, estás buscando claridad.
+          </p>
+
+          <ul class="space-y-4 text-lg">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-orange-500 mt-0.5 shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Sientes que tienes mucho dentro —ideas, talento, comunidad— pero no sabes cómo transformarlo en un
+                eCommerce sostenible.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-orange-500 mt-0.5 shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Has probado cursos genéricos y sigues en el mismo punto: con información, pero sin decisiones
+                claras.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-orange-500 mt-0.5 shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Quieres validar tus ideas con criterio, antes de invertir tiempo y dinero en algo que no conecte
+                con nadie.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-orange-500 mt-0.5 shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Te gusta pensar, crear y construir cosas con sentido, y quieres que tu eCommerce refleje eso.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-orange-500 mt-0.5 shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Prefieres un espacio reducido, donde puedas preguntar, equivocarte, y aterrizar tu caso real con
+                acompañamiento.</span>
+            </li>
+          </ul>
+
+          <div class="text-center mt-10">
+            <a href="workshops.html" class="btn-primary inline-block">
+              Ver workshops pensados para ti
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diferencial -->
+    <section id="diferencial" class="section-padding bg-stone-50">
+      <div class="container-max">
+        <div class="max-w-3xl mx-auto text-center mb-10">
+          <h2 class="text-4xl md:text-5xl font-bold text-stone-950 mb-4">
+            Qué hace diferente a Clairo
+          </h2>
+          <p class="text-xl text-stone-600">
+            Menos ruido, más criterio. Menos promesas vacías, más decisiones aterrizadas.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="text-xl font-semibold mb-3 text-stone-950">
+              No vendemos sueños, trabajamos decisiones
+            </h3>
+            <p class="text-stone-600 text-sm">
+              Aquí no te prometemos "ventas automáticas mientras duermes". Te ayudamos a pensar mejor, elegir mejor y
+              construir sobre una base sólida.
+            </p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="text-xl font-semibold mb-3 text-stone-950">
+              Metodología pensada para personas creativas
+            </h3>
+            <p class="text-stone-600 text-sm">
+              Si vienes del diseño, el contenido, la creación o simplemente tienes una mente inquieta, los workshops
+              están diseñados para hablar tu idioma.
+            </p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="text-xl font-semibold mb-3 text-stone-950">
+              Acción desde el minuto uno
+            </h3>
+            <p class="text-stone-600 text-sm">
+              Cada ejercicio está conectado con tu realidad. No te llevas solo apuntes: te llevas decisiones, rutas y un
+              mapa accionable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instructor -->
+    <section id="instructor" class="section-padding">
+      <div class="container-max">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-[1.2fr_minmax(0,1fr)] gap-10 items-start">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-stone-950 mb-4">
+              Quién está detrás de Clairo
+            </h2>
+            <h3 class="text-xl font-semibold text-stone-900 mb-2">
+              Carlos González · CEO &amp; Founder de Clairo
+            </h3>
+            <div class="space-y-3 text-stone-700">
+              <p>
+                Llevo más de diez años trabajando en marketing, diseño de productos digitales, branding y estrategia
+                junto a emprendedores y equipos creativos.
+              </p>
+              <p>
+                En todo este tiempo he visto lo mismo una y otra vez: proyectos llenos de talento que se quedan a medias
+                por falta de claridad, no por falta de esfuerzo.
+              </p>
+              <p>
+                Clairo nace para cambiar eso: menos caos, menos prueba y error, más intención y estructura desde el
+                principio.
+              </p>
+              <p>
+                Si quieres construir un eCommerce que conecte contigo, con tu audiencia y con la realidad del mercado,
+                aquí tienes un espacio para pensarlo bien.
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <div
+              class="w-56 h-56 md:w-64 md:h-64 rounded-3xl bg-gradient-to-br from-orange-500/40 via-stone-800 to-stone-950 border border-stone-800 flex items-center justify-center text-white/70 text-sm text-center px-6">
+              Foto de Carlos González, fundador de Clairo
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="section-padding bg-stone-50">
+      <div class="container-max">
+        <div class="max-w-3xl mx-auto text-center mb-10">
+          <h2 class="text-4xl md:text-5xl font-bold text-stone-950 mb-4">
+            Personas que ya han pasado por la experiencia Clairo
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-10">
+          <article class="bg-white rounded-2xl p-6 border border-stone-200 h-full flex flex-col justify-between">
+            <p class="text-stone-700 mb-4 italic text-sm">
+              “Tenía muchas ideas sueltas y ninguna dirección. Salí del workshop con una oportunidad clara y un mapa de
+              pasos. Sentí alivio y foco por primera vez.”
+            </p>
+            <div class="text-sm text-stone-600">
+              <div class="font-semibold text-stone-900">Ana</div>
+              <div>Perú</div>
+            </div>
+          </article>
+          <article class="bg-white rounded-2xl p-6 border border-stone-200 h-full flex flex-col justify-between">
+            <p class="text-stone-700 mb-4 italic text-sm">
+              “No fue un taller más de teoría. Trabajamos sobre mi caso, tomé decisiones en directo y salí con una hoja
+              de ruta concreta.”
+            </p>
+            <div class="text-sm text-stone-600">
+              <div class="font-semibold text-stone-900">Javier</div>
+              <div>México</div>
+            </div>
+          </article>
+          <article class="bg-white rounded-2xl p-6 border border-stone-200 h-full flex flex-col justify-between">
+            <p class="text-stone-700 mb-4 italic text-sm">
+              “Me encantó que aquí no te venden humo. Te hacen pensar, cuestionar y tomar decisiones honestas sobre tu
+              eCommerce.”
+            </p>
+            <div class="text-sm text-stone-600">
+              <div class="font-semibold text-stone-900">Mariana</div>
+              <div>España</div>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center">
+          <a href="workshops.html" class="btn-primary inline-block">
+            Quiero vivir un workshop así
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banda CTA workshops -->
+    <section id="cta-banda-workshops"
+      class="section-padding bg-gradient-to-r from-stone-900 via-stone-800 to-stone-900 text-white">
+      <div class="container-max text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          El mejor momento para darle forma a tu eCommerce es antes de quemarte intentándolo solo
+        </h2>
+        <p class="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
+          Empieza por una decisión simple: reservar tu plaza en un workshop y darte un espacio para pensar con calma,
+          criterio y acompañamiento.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="workshops.html"
+            class="bg-orange-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-orange-600 transition-all shadow-xl inline-block">
+            Ver próximos workshops
+          </a>
+          <a href="#como-funciona"
+            class="bg-white/10 backdrop-blur-md text-white px-8 py-4 rounded-full font-semibold border border-white/20 hover:bg-white/20 transition-all inline-block">
+            Ver cómo funciona Clairo
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-padding">
+      <div class="container-max max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-stone-950 mb-6 text-center">
+          Preguntas frecuentes
+        </h2>
+
+        <div class="space-y-4">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="font-semibold">¿Necesito experiencia previa en eCommerce?</span>
+              <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-answer">
+              <p class="text-stone-600">
+                No. Muchos participantes llegan en fase de exploración. Los workshops están diseñados para acompañarte
+                desde cero, siempre que vengas con ganas de pensar y construir.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="font-semibold">¿Qué formato tienen los workshops?</span>
+              <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-answer">
+              <p class="text-stone-600">
+                Son sesiones en vivo, en grupo reducido, con ejercicios prácticos y espacios para preguntas sobre tu
+                caso real.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="font-semibold">¿Qué pasa si no puedo asistir en la fecha elegida?</span>
+              <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-answer">
+              <p class="text-stone-600">
+                Si nos avisas con al menos 6 horas de antelación, podemos mover tu plaza a la siguiente edición
+                disponible.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="font-semibold">¿Son grabados los workshops?</span>
+              <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-answer">
+              <p class="text-stone-600">
+                La experiencia está pensada para que la vivas en tiempo real. Algunas sesiones no se graban; en cada
+                workshop se indica claramente si habrá grabación o no.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="font-semibold">¿Cómo reservo mi lugar?</span>
+              <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="faq-answer">
+              <p class="text-stone-600">
+                Solo tienes que ir a la página de workshops, elegir el que encaje contigo y completar el proceso de
+                pago. Recibirás un correo con toda la información.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-10">
+          <a href="workshops.html" class="btn-secondary inline-block">
+            Ir a la página de workshops
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="section-padding bg-stone-50">
+      <div class="container-max max-w-2xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-stone-950 mb-4">
+          Recibe antes que nadie los nuevos workshops y fechas
+        </h2>
+        <p class="text-lg text-stone-600 mb-8">
+          Si ahora mismo no puedes unirte, pero sabes que quieres construir un eCommerce con criterio, deja tu correo y
+          te avisamos cuando haya nuevas ediciones.
+        </p>
+
+        <form id="newsletter-form" method="POST" action="/api/newsletter/subscribe" class="space-y-4 text-left">
+          <div class="form-group">
+            <label for="newsletter-nombre" class="form-label">Nombre</label>
+            <input id="newsletter-nombre" name="nombre" type="text" required placeholder="Tu nombre completo"
+              class="form-input" />
+          </div>
+          <div class="form-group">
+            <label for="newsletter-email" class="form-label">Email</label>
+            <input id="newsletter-email" name="email" type="email" required placeholder="tu@correo.com"
+              class="form-input" />
+          </div>
+          <div class="form-group">
+            <label for="newsletter-telefono" class="form-label">Teléfono de contacto</label>
+            <input id="newsletter-telefono" name="telefono" type="tel" placeholder="+34 600 000 000"
+              class="form-input" />
+          </div>
+          <div class="form-group">
+            <label for="newsletter-pais" class="form-label">País</label>
+            <input id="newsletter-pais" name="pais" type="text" required placeholder="Ej: España, México, Argentina…"
+              class="form-input" />
+          </div>
+          <div class="form-group">
+            <label for="newsletter-ecommerceSituation" class="form-label">Situación de eCommerce</label>
+            <select id="newsletter-ecommerceSituation" name="ecommerceSituation" required class="form-input">
+              <option value="">Selecciona una opción</option>
+              <option value="sin-tienda-pero-interesado">
+                Nunca he tenido una tienda online, pero me interesa aprender y lanzar una.
+              </option>
+              <option value="intentos-sin-estructura">
+                He intentado vender algo online (por Instagram, WhatsApp, etc.), pero sin estructura ni resultados.
+              </option>
+              <option value="tuve-tienda-la-cerre">
+                Tuve una tienda, pero la cerré, y me gustaría hacerlo mejor si vuelvo a intentarlo.
+              </option>
+              <option value="preparando-tienda">
+                Estoy preparando mi tienda, estoy en fase de planificación o desarrollo.
+              </option>
+              <option value="tienda-activa">
+                Tengo una tienda activa, pero quiero mejorar mis resultados o escalarla.
+              </option>
+              <option value="no-seguro-pero-curiosidad">
+                Aún no estoy seguro si quiero abrir una tienda, pero me interesa entender cómo funciona el eCommerce.
+              </option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary w-full md:w-auto">
+            Quiero estar al tanto
+          </button>
+          <p class="text-xs text-stone-500 mt-2 text-center md:text-left">
+            Usaremos tus datos solo para enviarte novedades sobre workshops y contenido relacionado con eCommerce.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section id="cta-final" class="section-padding bg-gradient-to-br from-stone-900 to-stone-800 text-white">
+      <div class="container-max text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          Tu eCommerce merece algo mejor que improvisación
+        </h2>
+        <p class="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
+          Regálate unas horas de claridad. El siguiente paso es sencillo: elegir un workshop y reservar tu lugar.
+        </p>
+        <a href="workshops.html"
+          class="bg-orange-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-orange-600 transition-all shadow-xl inline-block">
+          Ver workshops de Clairo
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-stone-950 text-white/60 py-12 border-t border-white/10">
+    <div class="container-max px-6">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <a href="index.html" class="mb-4 block">
+            <img src="img/logo.svg" alt="Clairo" class="h-5 w-auto brightness-0 invert">
+          </a>
+          <p class="text-sm text-white/60">
+            Workshops de eCommerce con criterio, claridad y acción.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Legal</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/legal/aviso-legal" class="hover:text-white transition-colors">Aviso legal</a></li>
+            <li><a href="/legal/politica-de-privacidad" class="hover:text-white transition-colors">Política de
+                privacidad</a></li>
+            <li><a href="/legal/politica-de-cookies" class="hover:text-white transition-colors">Política de
+                cookies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Redes</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://www.instagram.com/clairo" class="hover:text-white transition-colors">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@clairo" class="hover:text-white transition-colors">TikTok</a></li>
+            <li><a href="https://www.linkedin.com/company/clairo"
+                class="hover:text-white transition-colors">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Contacto</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="mailto:contacto@clairo.es" class="hover:text-white transition-colors">contacto@clairo.es</a>
+            </li>
+            <li><a href="tel:+34000000000" class="hover:text-white transition-colors">+34 000 000 000</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 text-center text-sm">
+        <p>© 2024 Clairo. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

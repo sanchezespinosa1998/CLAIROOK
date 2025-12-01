@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Convierte tu pasión en un eCommerce | Workshop en vivo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Workshop en vivo de 180 minutos para aprender a usar tus pasiones de forma estratégica y encontrar oportunidades reales de eCommerce, incluso en mercados saturados.">
+  <meta name="keywords"
+    content="workshop ecommerce, convierte tu pasión en un ecommerce, clairo, taller ecommerce, oportunidades ecommerce">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="bg-white text-stone-950 min-h-screen">
+  <!-- Header -->
+  <header class="bg-white border-b border-stone-200 sticky top-0 z-50">
+    <nav class="container-max px-6 py-4 flex items-center justify-between">
+      <a href="index.html">
+        <img src="img/logo.svg" alt="Clairo" class="h-5 w-auto">
+      </a>
+      <div class="flex items-center gap-2">
+        <div class="hidden md:flex items-center gap-6">
+          <a href="index.html" class="text-sm hover:text-orange-500 transition-colors">Home</a>
+          <a href="sobre-clairo.html" class="text-sm hover:text-orange-500 transition-colors">Sobre Clairo</a>
+          <a href="workshops.html" class="text-sm hover:text-orange-500 transition-colors">Workshops</a>
+          <a href="metodologia.html" class="text-sm hover:text-orange-500 transition-colors">Metodología</a>
+          <a href="casos.html" class="text-sm hover:text-orange-500 transition-colors">Casos</a>
+          <a href="#cta-final"
+            class="text-sm bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition-colors">Reserva tu
+            lugar</a>
+        </div>
+        <button class="md:hidden p-2 text-stone-950 mobile-menu-button" aria-label="Abrir menú de navegación">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 5h16M4 12h16M4 19h16"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Menú móvil flotante -->
+  <div
+    class="mobile-menu hidden fixed top-20 left-1/2 -translate-x-1/2 w-[90%] max-w-md z-50 bg-white rounded-2xl border border-stone-200 shadow-[0_8px_32px_rgba(0,0,0,0.2)] p-6">
+    <div class="flex flex-col gap-4">
+      <a href="index.html"
+        class="text-sm font-medium text-stone-700 hover:text-orange-500 uppercase tracking-wider py-2 px-4 rounded-full hover:bg-stone-50 transition-all font-mono">Home</a>
+      <a href="sobre-clairo.html"
+        class="text-sm font-medium text-stone-700 hover:text-orange-500 uppercase tracking-wider py-2 px-4 rounded-full hover:bg-stone-50 transition-all font-mono">Sobre
+        Clairo</a>
+      <a href="workshops.html"
+        class="text-sm font-medium text-stone-700 hover:text-orange-500 uppercase tracking-wider py-2 px-4 rounded-full hover:bg-stone-50 transition-all font-mono">Workshops</a>
+      <a href="metodologia.html"
+        class="text-sm font-medium text-stone-700 hover:text-orange-500 uppercase tracking-wider py-2 px-4 rounded-full hover:bg-stone-50 transition-all font-mono">Metodología</a>
+      <a href="casos.html"
+        class="text-sm font-medium text-stone-700 hover:text-orange-500 uppercase tracking-wider py-2 px-4 rounded-full hover:bg-stone-50 transition-all font-mono">Casos</a>
+      <a href="contacto.html"
+        class="text-sm font-medium text-white uppercase tracking-wider py-2 px-4 rounded-full bg-orange-500 hover:bg-orange-600 transition-all font-mono">Contacto</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="bg-gradient-to-br from-stone-950 via-stone-900 to-stone-800 text-white py-20">
+      <div class="container-max px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <p class="text-xs font-mono uppercase tracking-[0.2em] text-orange-400 mb-3">Workshop en vivo</p>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+              Convierte tu pasión en un eCommerce
+            </h1>
+            <p class="text-lg md:text-xl text-white/80 mb-6">
+              Un workshop para usar tus pasiones de forma estratégica y encontrar oportunidades reales de eCommerce, de
+              manera práctica y apoyándote con inteligencia artificial.
+            </p>
+            <p class="text-sm text-white/70 mb-6">
+              Duración: 1 sesión · 180 mins · En vivo · Cupos limitados
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="#cta-final"
+                class="bg-orange-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-600 transition-all shadow-lg">
+                Reserva tu lugar
+              </a>
+            </div>
+          </div>
+          <div>
+            <div
+              class="relative rounded-3xl border border-white/10 bg-gradient-to-br from-stone-900 to-stone-800 p-8 h-full flex flex-col justify-between overflow-hidden">
+              <div class="absolute inset-0 opacity-[0.08] pointer-events-none schematic-grid"></div>
+              <div class="relative space-y-4">
+                <p class="text-sm text-white/70">
+                  Workshop práctico en vivo donde conectarás tus pasiones con oportunidades reales de eCommerce, incluso
+                  en mercados saturados.
+                </p>
+                <ul class="space-y-2 text-sm text-white/80">
+                  <li class="flex gap-2">
+                    <span class="mt-1">✓</span>
+                    <span>Metodología paso a paso para detectar productos con oportunidad.</span>
+                  </li>
+                  <li class="flex gap-2">
+                    <span class="mt-1">✓</span>
+                    <span>Ejercicios guiados con herramientas de inteligencia artificial como Perplexity.</span>
+                  </li>
+                  <li class="flex gap-2">
+                    <span class="mt-1">✓</span>
+                    <span>Mapa de acción descargable para que sepas qué hacer después del workshop.</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="relative mt-8 pt-6 border-t border-white/10 text-sm text-white/70">
+                <p>Ideal si quieres lanzar un eCommerce con sentido, claridad y estructura desde el primer día.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Información rápida -->
+    <section id="quick-info" class="section-padding bg-stone-50">
+      <div class="container-max px-6">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-stone-950 mb-8 text-center">Información rápida</h2>
+          <div class="grid md:grid-cols-3 gap-6 mb-10">
+            <div class="bg-white border border-stone-200 rounded-2xl p-6 text-center">
+              <p class="text-sm text-stone-500 mb-1">Sesiones</p>
+              <p class="text-xl font-semibold text-stone-950">1 sesión</p>
+            </div>
+            <div class="bg-white border border-stone-200 rounded-2xl p-6 text-center">
+              <p class="text-sm text-stone-500 mb-1">Duración</p>
+              <p class="text-xl font-semibold text-stone-950">180 minutos</p>
+            </div>
+            <div class="bg-white border border-stone-200 rounded-2xl p-6 text-center">
+              <p class="text-sm text-stone-500 mb-1">Formato</p>
+              <p class="text-xl font-semibold text-stone-950">En vivo</p>
+            </div>
+          </div>
+
+          <div class="bg-white border border-stone-200 rounded-2xl p-6">
+            <h3 class="text-sm font-semibold text-stone-500 uppercase tracking-[0.2em] mb-4">Horarios orientativos</h3>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 text-sm">
+              <div class="flex flex-col border border-stone-100 rounded-xl p-3">
+                <span class="font-semibold flex items-center gap-2">
+                  <span>🇪🇸</span> <span>España</span>
+                </span>
+                <span class="text-stone-600">18:30</span>
+              </div>
+              <div class="flex flex-col border border-stone-100 rounded-xl p-3">
+                <span class="font-semibold flex items-center gap-2">
+                  <span>🇲🇽</span> <span>México (CT)</span>
+                </span>
+                <span class="text-stone-600">11:30</span>
+              </div>
+              <div class="flex flex-col border border-stone-100 rounded-xl p-3">
+                <span class="font-semibold flex items-center gap-2">
+                  <span>🇦🇷</span> <span>Argentina</span>
+                </span>
+                <span class="text-stone-600">14:30</span>
+              </div>
+              <div class="flex flex-col border border-stone-100 rounded-xl p-3">
+                <span class="font-semibold flex items-center gap-2">
+                  <span>🇵🇪</span> <span>Perú</span>
+                </span>
+                <span class="text-stone-600">12:30</span>
+              </div>
+              <div class="flex flex-col border border-stone-100 rounded-xl p-3">
+                <span class="font-semibold flex items-center gap-2">
+                  <span>🇨🇴</span> <span>Colombia</span>
+                </span>
+                <span class="text-stone-600">12:30</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section id="benefits" class="section-padding">
+      <div class="container-max px-6">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-stone-950 mb-8 text-center">
+            Lo que te llevarás de este workshop
+          </h2>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6">
+              <h3 class="text-xl font-semibold mb-2">Conocimientos para identificar productos con oportunidad</h3>
+              <p class="text-stone-600">
+                Aprenderás a conectar tus pasiones con lo que busca el mercado para detectar productos con potencial
+                real.
+              </p>
+            </div>
+            <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6">
+              <h3 class="text-xl font-semibold mb-2">Un método práctico para evaluar ideas con confianza</h3>
+              <p class="text-stone-600">
+                Te llevarás un sistema fácil de replicar y útil de por vida para analizar y priorizar ideas de eCommerce.
+              </p>
+            </div>
+            <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6">
+              <h3 class="text-xl font-semibold mb-2">Ejercicios prácticos guiados con Perplexity</h3>
+              <p class="text-stone-600">
+                Trabajaremos en vivo con Perplexity para investigar, analizar y validar oportunidades usando herramientas
+                modernas de inteligencia artificial.
+              </p>
+            </div>
+            <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6">
+              <h3 class="text-xl font-semibold mb-2">Un punto de partida claro para avanzar en tu eCommerce</h3>
+              <p class="text-stone-600">
+                Saldrás del workshop con claridad sobre tu dirección, evitando dudas, bloqueos y pasos en falso.
+              </p>
+            </div>
+            <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 md:col-span-2">
+              <h3 class="text-xl font-semibold mb-2">Mapa de acción descargable</h3>
+              <p class="text-stone-600">
+                Recibirás un mapa de acción descargable con tus siguientes pasos como emprendedor de eCommerce.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Para quién es -->
+    <section id="audience-fit" class="section-padding bg-stone-50">
+      <div class="container-max px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-stone-950 mb-6 text-center">
+            Este workshop es para ti si…
+          </h2>
+          <ul class="space-y-4 text-lg">
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-orange-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Estás explorando la idea de abrir un eCommerce y quieres empezar con claridad en lugar de
+                intuiciones.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-orange-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Quieres lanzar tu primer eCommerce y necesitas identificar un producto con sentido y oportunidad
+                real.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-orange-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Tienes una comunidad o audiencia y buscas una forma inteligente de monetizarla sin caer en productos
+                improvisados.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-orange-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Eres emprendedor y quieres diversificar tus ingresos con un proyecto que puedas construir con
+                criterio y estrategia.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-6 h-6 text-orange-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Tienes varias ideas y no sabes cuál elegir y necesitas un método para tomar una decisión
+                sólida.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instructor -->
+    <section id="instructor" class="section-padding">
+      <div class="container-max px-6">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] gap-10 items-start">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-stone-950 mb-4">Sobre el instructor</h2>
+            <p class="text-sm uppercase tracking-[0.2em] text-stone-500 mb-4">Carlos González · CEO &amp; Founder</p>
+            <div class="space-y-4 text-stone-700">
+              <p>
+                Llevo más de diez años trabajando en marketing, diseño de productos digitales, branding y estrategia.
+              </p>
+              <p>
+                En este tiempo, acompañando a emprendedores y equipos creativos, entendí algo clave: la mayoría de los
+                negocios no fracasa por falta de esfuerzo, sino por falta de conexión entre lo que ofrecen y lo que su
+                audiencia realmente valora.
+              </p>
+              <p>
+                Hoy aplico ese mismo enfoque al eCommerce con Clairo: sin fórmulas mágicas, solo claridad, criterio y
+                estructura para tomar mejores decisiones desde el inicio.
+              </p>
+              <p>
+                Mi propósito es enseñarte a pensar con intención. Si quieres construir un eCommerce con propósito,
+                estructura y criterio… bienvenido.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div
+              class="relative overflow-hidden rounded-3xl border border-stone-200 bg-stone-50 aspect-[4/5] flex items-center justify-center">
+              <div class="absolute inset-0 opacity-[0.05] schematic-grid"></div>
+              <div class="relative text-center px-6">
+                <div
+                  class="mx-auto mb-4 w-20 h-20 rounded-full bg-gradient-to-br from-orange-500 to-amber-400 flex items-center justify-center text-3xl font-semibold text-white">
+                  C
+                </div>
+                <p class="text-sm text-stone-500 mb-1">Instructor</p>
+                <p class="text-lg font-semibold text-stone-900 mb-2">Carlos González</p>
+                <p class="text-sm text-stone-600">
+                  CEO &amp; Founder de Clairo. Acompaña a emprendedores y equipos creativos a construir proyectos con
+                  intención.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Escasez -->
+    <section id="scarcity" class="section-padding bg-stone-950 text-white">
+      <div class="container-max px-6">
+        <div class="max-w-5xl mx-auto">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8 mb-8">
+            <div>
+              <h2 class="text-3xl md:text-4xl font-bold mb-2">Solo por tiempo limitado</h2>
+              <p class="text-white/70 max-w-xl">
+                La preventa tiene plazas y fechas limitadas. Asegura tu lugar antes de que cambie el precio o se agoten
+                los cupos.
+              </p>
+            </div>
+            <div class="bg-black/40 border border-white/10 rounded-2xl px-6 py-4 text-center">
+              <p class="text-xs uppercase tracking-[0.25em] text-orange-300 mb-2">La preventa termina en</p>
+              <div id="countdown-timer" class="flex justify-center gap-4 text-sm" data-countdown-target="">
+                <!-- Se rellena con JS -->
+              </div>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-black/30 border border-white/10 rounded-2xl p-6">
+              <h3 class="text-lg font-semibold mb-2">Aprovecha la preventa hasta el día X</h3>
+              <p class="text-white/70">
+                Accede al precio preferencial antes del próximo ajuste.
+              </p>
+            </div>
+            <div class="bg-black/30 border border-white/10 rounded-2xl p-6">
+              <h3 class="text-lg font-semibold mb-2">Los cupos son limitados</h3>
+              <p class="text-white/70">
+                El workshop es en formato práctico y en vivo, por eso trabajamos con grupos pequeños.
+              </p>
+            </div>
+            <div class="bg-black/30 border border-white/10 rounded-2xl p-6">
+              <h3 class="text-lg font-semibold mb-2">Los precios subirán pronto</h3>
+              <p class="text-white/70">
+                La preventa cierra en cuanto se complete el cupo o llegue la fecha indicada.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section-padding bg-stone-50">
+      <div class="container-max px-6">
+        <div class="max-w-4xl mx-auto text-center mb-10">
+          <h2 class="text-3xl md:text-4xl font-bold text-stone-950 mb-4">Precios y preventa</h2>
+          <p class="text-lg text-stone-600">
+            Elige el momento que mejor se adapte a ti. Los precios suben a medida que se acerca la fecha del workshop.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <!-- Preventa -->
+          <div class="bg-white border border-orange-200 rounded-2xl p-6 flex flex-col">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-orange-500 mb-2">Preventa</p>
+            <h3 class="text-lg font-semibold mb-2">Hasta el día X</h3>
+            <div class="mb-4">
+              <p class="text-3xl font-bold text-stone-950">PRECIO_PREVENTA</p>
+              <p class="text-sm text-stone-500 line-through mt-1">PRECIO_NORMAL · Precio normal</p>
+            </div>
+            <p class="text-sm text-stone-600 mb-4">Disponible hasta el día X.</p>
+            <a href="#cta-final" class="btn-primary w-full mt-auto text-center">Comprar preventa</a>
+          </div>
+
+          <!-- Estándar -->
+          <div class="bg-white border border-stone-200 rounded-2xl p-6 flex flex-col">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500 mb-2">Precio estándar</p>
+            <h3 class="text-lg font-semibold mb-2">Del día X al día Y</h3>
+            <div class="mb-4">
+              <p class="text-3xl font-bold text-stone-950">PRECIO_ESTANDAR</p>
+            </div>
+            <p class="text-sm text-stone-600 mb-4">Precio vigente del día X al día Y.</p>
+            <a href="#cta-final" class="btn-secondary w-full mt-auto text-center">Comprar ahora</a>
+          </div>
+
+          <!-- Last chance -->
+          <div class="bg-white border border-stone-200 rounded-2xl p-6 flex flex-col">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-red-500 mb-2">Last chance</p>
+            <h3 class="text-lg font-semibold mb-2">Últimos días</h3>
+            <div class="mb-4">
+              <p class="text-3xl font-bold text-stone-950">PRECIO_FINAL</p>
+            </div>
+            <p class="text-sm text-stone-600 mb-4">Últimos lugares, hasta el día Z o fin de cupos.</p>
+            <a href="#cta-final" class="btn-secondary w-full mt-auto text-center">Asegurar mi lugar</a>
+          </div>
+
+          <!-- Grupal -->
+          <div class="bg-white border border-stone-200 rounded-2xl p-6 flex flex-col">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500 mb-2">Paquete grupal</p>
+            <h3 class="text-lg font-semibold mb-2">Paquete grupal</h3>
+            <div class="mb-4">
+              <p class="text-3xl font-bold text-stone-950">PRECIO_GRUPAL</p>
+            </div>
+            <p class="text-sm text-stone-600 mb-4">
+              Trae a 3 amigos y ahorra X%. Precio especial por grupo.
+            </p>
+            <a href="#cta-final" class="btn-secondary w-full mt-auto text-center">Comprar con amigos</a>
+          </div>
+        </div>
+
+        <!-- Métodos de pago -->
+        <div class="max-w-3xl mx-auto mt-12 text-center text-sm text-stone-600">
+          <p class="font-medium mb-2">Pago seguro</p>
+          <p class="mb-4">Procesamos los pagos con proveedores de confianza.</p>
+          <div class="flex justify-center gap-6 text-xs uppercase tracking-[0.2em] text-stone-500">
+            <span>Stripe</span>
+            <span>PayPal</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonials" class="section-padding">
+      <div class="container-max px-6">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-stone-950 mb-8 text-center">
+            Lo que dicen quienes han pasado por Clairo
+          </h2>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-stone-50 border-l-4 border-orange-500 rounded-r-2xl p-6">
+              <p class="text-stone-700 italic mb-4">
+                "Llegué con muchas ideas y salí con una oportunidad clara. Por primera vez sentí que tenía un camino
+                concreto para avanzar."
+              </p>
+              <p class="text-sm font-semibold text-stone-900">Ana · <span class="text-stone-600">Perú</span></p>
+            </div>
+            <div class="bg-stone-50 border-l-4 border-orange-500 rounded-r-2xl p-6">
+              <p class="text-stone-700 italic mb-4">
+                "Pensaba que eCommerce era lanzar productos y esperar ventas. Ahora entiendo cómo elegir algo que
+                realmente tenga sentido para mí y para el mercado."
+              </p>
+              <p class="text-sm font-semibold text-stone-900">Javier · <span class="text-stone-600">México</span></p>
+            </div>
+            <div class="bg-stone-50 border-l-4 border-orange-500 rounded-r-2xl p-6">
+              <p class="text-stone-700 italic mb-4">
+                "Clairo me ayudó a ver mis pasiones desde una perspectiva estratégica y me fascina la forma práctica en
+                la que te enseñan el contenido."
+              </p>
+              <p class="text-sm font-semibold text-stone-900">Mariana · <span class="text-stone-600">España</span></p>
+            </div>
+            <div class="bg-stone-50 border-l-4 border-orange-500 rounded-r-2xl p-6">
+              <p class="text-stone-700 italic mb-4">
+                "Probé cursos antes, pero este fue diferente: trabajas sobre tu caso real y sales con un producto viable,
+                no con teoría."
+              </p>
+              <p class="text-sm font-semibold text-stone-900">Luis · <span class="text-stone-600">Colombia</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-padding bg-stone-50">
+      <div class="container-max px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-stone-950 mb-8 text-center">Preguntas frecuentes</h2>
+          <div class="space-y-4">
+            <div class="faq-item">
+              <div class="faq-question">
+                <span class="font-semibold">¿Necesito experiencia previa en eCommerce?</span>
+                <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p class="text-stone-600">
+                  No. Este workshop está diseñado para quienes están empezando o están explorando abrir un eCommerce.
+                  Trabajaremos desde cero, con ejercicios prácticos y metodología clara.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span class="font-semibold">¿Qué necesito para participar?</span>
+                <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p class="text-stone-600">
+                  Solo una computadora y conexión a internet. Usaremos Perplexity y otras herramientas gratuitas; te
+                  enseñaremos a utilizarlas paso a paso.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span class="font-semibold">¿Qué me voy a llevar al finalizar?</span>
+                <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p class="text-stone-600">
+                  Saldrás con un producto con oportunidad real, un método para evaluar ideas, claridad sobre tus próximos
+                  pasos y un mapa de acción descargable para seguir avanzando.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span class="font-semibold">¿Cómo sé si este workshop es para mí?</span>
+                <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p class="text-stone-600">
+                  Si quieres lanzar un eCommerce con sentido, si tienes ideas pero no sabes cuál elegir, o si buscas unir
+                  tus pasiones con una oportunidad real… este workshop es para ti.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span class="font-semibold">¿Qué pasa si no puedo asistir en vivo?</span>
+                <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p class="text-stone-600">
+                  La sesión no será grabada. Aun así, si no puedes asistir puedes comunicarte con 6 horas de anticipación
+                  y podemos registrarte en la siguiente sesión.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <span class="font-semibold">¿Cómo puedo solicitar factura?</span>
+                <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p class="text-stone-600">
+                  Si necesitas factura, envía tus datos fiscales al correo
+                  <a href="mailto:carlos.gonzalez@clairo.es" class="text-orange-500 underline">carlos.gonzalez@clairo.es</a>
+                  una vez que realices tu compra.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final con formulario -->
+    <section id="cta-final" class="section-padding bg-gradient-to-br from-stone-900 to-stone-800 text-white">
+      <div class="container-max px-6">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-start">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              ¿Listo para transformar tu forma de hacer eCommerce?
+            </h2>
+            <p class="text-lg text-white/80 mb-6">
+              Asegura tu lugar antes de que cambie el precio o se acaben los lugares.
+            </p>
+            <a href="#cta-final"
+              class="inline-flex items-center gap-2 bg-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition-all shadow-lg mb-6">
+              Quiero unirme al workshop
+            </a>
+            <p class="text-sm text-white/70">
+              Trabajaremos en directo sobre tus ideas y pasiones para traducirlas en oportunidades reales de eCommerce.
+              No necesitas experiencia previa, solo curiosidad y ganas de construir algo con sentido.
+            </p>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur">
+            <form id="workshop-registration-form" method="POST" action="/api/workshop/register" class="space-y-4">
+              <div class="form-group">
+                <label for="name" class="form-label text-white">Nombre</label>
+                <input id="name" name="name" type="text" required placeholder="Tu nombre completo"
+                  class="form-input bg-white/90">
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label text-white">Email</label>
+                <input id="email" name="email" type="email" required placeholder="tu@correo.com"
+                  class="form-input bg-white/90">
+              </div>
+              <div class="form-group">
+                <label for="phone" class="form-label text-white">Teléfono de contacto</label>
+                <input id="phone" name="phone" type="tel" placeholder="Incluye código de país si aplica"
+                  class="form-input bg-white/90">
+              </div>
+              <div class="form-group">
+                <label for="country" class="form-label text-white">País</label>
+                <input id="country" name="country" type="text" required placeholder="Ej: España, México, Argentina…"
+                  class="form-input bg-white/90">
+              </div>
+              <div class="form-group">
+                <label for="ecommerceSituation" class="form-label text-white">Situación de eCommerce</label>
+                <select id="ecommerceSituation" name="ecommerceSituation" required
+                  class="form-input bg-white/90 appearance-none">
+                  <option value="">Selecciona una opción</option>
+                  <option value="sin-tienda-pero-interesado">
+                    Nunca he tenido una tienda online, pero me interesa aprender y lanzar una.
+                  </option>
+                  <option value="intentos-sin-estructura">
+                    He intentado vender algo online (por Instagram, WhatsApp, etc.), pero sin estructura ni resultados.
+                  </option>
+                  <option value="tuve-tienda-la-cerre">
+                    Tuve una tienda, pero la cerré, y me gustaría hacerlo mejor si vuelvo a intentarlo.
+                  </option>
+                  <option value="preparando-tienda">
+                    Estoy preparando mi tienda, estoy en fase de planificación o desarrollo.
+                  </option>
+                  <option value="tienda-activa">
+                    Tengo una tienda activa, pero quiero mejorar mis resultados o escalarla.
+                  </option>
+                  <option value="no-seguro-pero-curiosidad">
+                    Aún no estoy seguro si quiero abrir una tienda, pero me interesa entender cómo funciona el eCommerce.
+                  </option>
+                </select>
+              </div>
+              <p class="text-xs text-white/70">
+                Al enviar este formulario aceptas nuestra política de privacidad y el tratamiento de tus datos para
+                gestionar tu plaza en el workshop.
+              </p>
+              <button type="submit" class="btn-primary w-full mt-2">
+                Reservar mi lugar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-stone-950 text-white/60 py-12">
+    <div class="container-max px-6">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <a href="index.html" class="mb-4 block">
+            <img src="img/logo.svg" alt="Clairo" class="h-5 w-auto brightness-0 invert">
+          </a>
+          <p class="text-sm text-white/60">
+            Workshops prácticos para detectar oportunidades de venta en ecommerce.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Workshops</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="workshops.html" class="hover:text-white transition-colors">Ver todos</a></li>
+            <li><a href="metodologia.html" class="hover:text-white transition-colors">Metodología</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Casos</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="casos.html" class="hover:text-white transition-colors">Casos de éxito</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Clairo</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="sobre-clairo.html" class="hover:text-white transition-colors">Sobre nosotros</a></li>
+            <li><a href="contacto.html" class="hover:text-white transition-colors">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 text-center text-sm">
+        <p>© 2024 Clairo. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Scroll suave para anclas internas
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const targetId = this.getAttribute('href').substring(1);
+          const target = document.getElementById(targetId);
+          if (target) {
+            e.preventDefault();
+            window.scrollTo({
+              top: target.offsetTop - 80,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+
+      // Contador regresivo sencillo
+      const countdownEl = document.getElementById('countdown-timer');
+      if (countdownEl) {
+        // Puedes actualizar esta fecha según tu preventa real
+        const targetDate = new Date();
+        targetDate.setDate(targetDate.getDate() + 7);
+
+        function updateCountdown() {
+          const now = new Date().getTime();
+          const distance = targetDate.getTime() - now;
+
+          if (distance <= 0) {
+            countdownEl.textContent = 'La preventa actual ha finalizado.';
+            return;
+          }
+
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+          const minutes = Math.floor((distance / (1000 * 60)) % 60);
+
+          countdownEl.innerHTML = `
+            <div class="flex flex-col items-center px-3">
+              <span class="text-2xl font-semibold">${days}</span>
+              <span class="text-[11px] uppercase tracking-[0.2em] text-white/60">días</span>
+            </div>
+            <div class="flex flex-col items-center px-3">
+              <span class="text-2xl font-semibold">${hours}</span>
+              <span class="text-[11px] uppercase tracking-[0.2em] text-white/60">horas</span>
+            </div>
+            <div class="flex flex-col items-center px-3">
+              <span class="text-2xl font-semibold">${minutes}</span>
+              <span class="text-[11px] uppercase tracking-[0.2em] text-white/60">min</span>
+            </div>
+          `;
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 60000);
+      }
+    });
+  </script>
+</body>
+
+</html>
+
+
