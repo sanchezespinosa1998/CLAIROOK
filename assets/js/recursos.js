@@ -24,7 +24,7 @@ function renderRecursosList() {
           ${recurso.categoria}
         </span>
         <h3 class="text-2xl font-semibold text-stone-950 mb-3">
-          <a href="#${recurso.slug}" class="hover:text-orange-500 transition-colors">
+          <a href="#${recurso.slug}" class="hover:text-[#8983DD] transition-colors">
             ${recurso.titulo}
           </a>
         </h3>

@@ -92,7 +92,7 @@ function renderWorkshopIndividual() {
       <ul class="space-y-3">
         ${workshop.beneficios.map(beneficio => `
           <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-orange-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-6 h-6 text-[#8983DD] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
             </svg>
             <span class="text-lg">${beneficio}</span>
@@ -109,7 +109,7 @@ function renderWorkshopIndividual() {
       <h2 class="text-3xl font-semibold mb-6">Contenido del workshop</h2>
       <div class="space-y-6">
         ${workshop.modulos.map((modulo, index) => `
-          <div class="border-l-4 border-orange-500 pl-6">
+          <div class="border-l-4 border-[#8983DD] pl-6">
             <h3 class="text-xl font-semibold mb-2">
               Módulo ${index + 1}: ${modulo.nombre}
             </h3>
