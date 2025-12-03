@@ -2,18 +2,22 @@
 
 /* Variables CSS para Clairo */
 :root {
-  --color-primary: #8983DD;
-  /* Morado principal */
-  --color-primary-dark: #6E68B0;
-  --color-text: #0c0a09;
-  --color-text-light: #78716c;
-  --color-bg: #ffffff;
-  --color-bg-dark: #0c0a09;
+  --color-primary: #132D46;
+  /* Azul oscuro principal */
+  --color-primary-dark: #191E29;
+  --color-accent: #01C38D;
+  /* Verde vibrante */
+  --color-accent-dark: #01A877;
+  --color-text: #191E29;
+  --color-text-light: #696E79;
+  --color-bg: #FFFFFF;
+  --color-bg-dark: #191E29;
   --color-stone-50: #fafaf9;
   --color-stone-100: #f5f5f4;
   --color-stone-200: #e7e5e4;
   --color-stone-300: #d6d3d1;
-  --color-stone-950: #0c0a09;
+  --color-stone-950: #191E29;
+  --color-gray: #696E79;
 }
 
 /* Estilos base */
@@ -64,10 +68,10 @@ body {
   transition: background-color 0.3s ease;
 }
 
-/* Cuando el header está sobre el hero, usar fondo verde lima */
+/* Cuando el header está sobre el hero, usar fondo verde */
 .site-header.nav-on-hero .glass-nav {
-  background: rgba(218, 255, 2, 0.15);
-  /* verde lima #DAFF02 con algo de transparencia */
+  background: rgba(1, 195, 141, 0.15);
+  /* verde #01C38D con algo de transparencia */
 }
 
 /* Scrollbar personalizado */
@@ -82,6 +86,17 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #333;
   border-radius: 3px;
+}
+
+/* Selección de texto personalizada - Verde */
+::selection {
+  background-color: #01C38D;
+  color: #000000;
+}
+
+::-moz-selection {
+  background-color: #01C38D;
+  color: #000000;
 }
 
 /* Grid schematico */
@@ -99,12 +114,12 @@ body {
   overflow-y: hidden;
 }
 
-/* Degradado verde lima en la base del hero apuntando hacia arriba */
+/* Degradado verde en la base del hero apuntando hacia arriba */
 .hero-orange-gradient {
   background: linear-gradient(to top,
-      rgba(137, 131, 221, 0.4) 0%,
-      rgba(137, 131, 221, 0.25) 30%,
-      rgba(137, 131, 221, 0.1) 60%,
+      rgba(1, 195, 141, 0.4) 0%,
+      rgba(1, 195, 141, 0.25) 30%,
+      rgba(1, 195, 141, 0.1) 60%,
       transparent 100%);
   z-index: 5;
 }
@@ -137,21 +152,21 @@ body {
 .wave-layer-1 {
   animation: wave-move-1 15s ease-in-out infinite;
   z-index: 3;
-  filter: drop-shadow(0 0 20px rgba(137, 131, 221, 0.4));
+  filter: drop-shadow(0 0 20px rgba(1, 195, 141, 0.4));
 }
 
 .wave-layer-2 {
   animation: wave-move-2 18s ease-in-out infinite;
   z-index: 2;
   animation-delay: -3s;
-  filter: drop-shadow(0 0 15px rgba(137, 131, 221, 0.3));
+  filter: drop-shadow(0 0 15px rgba(1, 195, 141, 0.3));
 }
 
 .wave-layer-3 {
   animation: wave-move-3 20s ease-in-out infinite;
   z-index: 1;
   animation-delay: -6s;
-  filter: drop-shadow(0 0 10px rgba(137, 131, 221, 0.2));
+  filter: drop-shadow(0 0 10px rgba(1, 195, 141, 0.2));
 }
 
 /* Animaciones de movimiento de las olas - efecto ondulante suave */
@@ -159,15 +174,19 @@ body {
   0% {
     transform: translateX(-50%) translateY(0) scaleX(1);
   }
+
   25% {
     transform: translateX(calc(-50% - 30px)) translateY(8px) scaleX(1.02);
   }
+
   50% {
     transform: translateX(calc(-50% - 60px)) translateY(0) scaleX(1);
   }
+
   75% {
     transform: translateX(calc(-50% - 30px)) translateY(-8px) scaleX(0.98);
   }
+
   100% {
     transform: translateX(-50%) translateY(0) scaleX(1);
   }
@@ -177,15 +196,19 @@ body {
   0% {
     transform: translateX(-50%) translateY(0) scaleX(1);
   }
+
   25% {
     transform: translateX(calc(-50% + 40px)) translateY(-6px) scaleX(0.98);
   }
+
   50% {
     transform: translateX(calc(-50% + 80px)) translateY(0) scaleX(1);
   }
+
   75% {
     transform: translateX(calc(-50% + 40px)) translateY(6px) scaleX(1.02);
   }
+
   100% {
     transform: translateX(-50%) translateY(0) scaleX(1);
   }
@@ -195,15 +218,19 @@ body {
   0% {
     transform: translateX(-50%) translateY(0) scaleX(1);
   }
+
   25% {
     transform: translateX(calc(-50% - 20px)) translateY(5px) scaleX(1.01);
   }
+
   50% {
     transform: translateX(calc(-50% - 40px)) translateY(0) scaleX(1);
   }
+
   75% {
     transform: translateX(calc(-50% - 20px)) translateY(-5px) scaleX(0.99);
   }
+
   100% {
     transform: translateX(-50%) translateY(0) scaleX(1);
   }
@@ -251,7 +278,7 @@ body {
 .btn-primary:hover {
   background-color: var(--color-primary-dark);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(137, 131, 221, 0.3);
+  box-shadow: 0 4px 12px rgba(19, 45, 70, 0.3);
 }
 
 .btn-secondary {
@@ -296,7 +323,7 @@ body {
 .form-textarea:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(137, 131, 221, 0.1);
+  box-shadow: 0 0 0 3px rgba(19, 45, 70, 0.1);
 }
 
 .form-textarea {
@@ -353,6 +380,22 @@ body {
   width: 100%;
 }
 
+/* Degradado radial oscuro con toque verde desde esquina */
+.bg-dark-radial-gradient {
+  background-color: #191E29 !important;
+  background-image: radial-gradient(ellipse at top left, rgba(1, 195, 141, 0.12) 0%, rgba(1, 195, 141, 0.06) 40%, rgba(1, 195, 141, 0.025) 60%, transparent 80%) !important;
+}
+
+.bg-dark-radial-gradient-top {
+  background-color: #191E29 !important;
+  background-image: radial-gradient(ellipse at top right, rgba(1, 195, 141, 0.12) 0%, rgba(1, 195, 141, 0.06) 40%, rgba(1, 195, 141, 0.025) 60%, transparent 80%) !important;
+}
+
+.bg-dark-radial-gradient-bottom {
+  background-color: #191E29 !important;
+  background-image: radial-gradient(ellipse at bottom left, rgba(1, 195, 141, 0.12) 0%, rgba(1, 195, 141, 0.06) 40%, rgba(1, 195, 141, 0.025) 60%, transparent 80%) !important;
+}
+
 /* Text utilities */
 .text-center {
   text-align: center;
@@ -362,7 +405,7 @@ body {
   color: var(--color-primary);
 }
 
-/* Efecto de láser verde lima sobre el badge del hero */
+/* Efecto de láser verde sobre el badge del hero */
 .hero-badge {
   position: relative;
   overflow: hidden;
@@ -377,18 +420,18 @@ body {
   height: 100%;
   background: linear-gradient(90deg,
       transparent,
-      rgba(218, 255, 2, 0.6),
-      rgba(218, 255, 2, 0.8),
-      rgba(218, 255, 2, 0.6),
+      rgba(1, 195, 141, 0.6),
+      rgba(1, 195, 141, 0.8),
+      rgba(1, 195, 141, 0.6),
       transparent);
   background-size: 200% 100%;
   animation: laser-scan 3s ease-in-out infinite;
   pointer-events: none;
   z-index: 1;
   border-radius: 9999px;
-  box-shadow: 0 0 20px rgba(218, 255, 2, 0.5),
-    0 0 40px rgba(218, 255, 2, 0.3),
-    inset 0 0 10px rgba(218, 255, 2, 0.2);
+  box-shadow: 0 0 20px rgba(1, 195, 141, 0.5),
+    0 0 40px rgba(1, 195, 141, 0.3),
+    inset 0 0 10px rgba(1, 195, 141, 0.2);
 }
 
 @keyframes laser-scan {

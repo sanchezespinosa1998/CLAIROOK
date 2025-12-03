@@ -35,11 +35,11 @@ function renderCasos() {
         </div>
         
         <div>
-          <h4 class="font-semibold mb-2 text-[#8983DD]">Métricas clave</h4>
+          <h4 class="font-semibold mb-2 text-[#132D46]">Métricas clave</h4>
           <ul class="space-y-2">
             ${caso.metricas_clave.map(metrica => `
               <li class="flex items-start gap-2">
-                <span class="text-[#8983DD] mt-1">✓</span>
+                <span class="text-[#132D46] mt-1">✓</span>
                 <span class="text-stone-700 font-medium">${metrica}</span>
               </li>
             `).join('')}
@@ -60,7 +60,7 @@ function renderTestimonios() {
 
   testimoniosData.forEach(testimonio => {
     const card = document.createElement('div');
-    card.className = 'bg-stone-50 rounded-lg p-6 mb-6 border-l-4 border-[#8983DD]';
+    card.className = 'bg-stone-50 rounded-lg p-6 mb-6 border-l-4 border-[#132D46]';
 
     card.innerHTML = `
       <p class="text-stone-700 mb-4 italic">"${testimonio.texto}"</p>
