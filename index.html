@@ -13,17 +13,19 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body
-  class="bg-white text-stone-950 antialiased min-h-screen flex flex-col font-sans selection:bg-[#01C38D] selection:text-black">
+  class="bg-white text-stone-950 antialiased min-h-screen flex flex-col font-sans selection:bg-[#5CAB94] selection:text-black">
 
   <!-- Header global fijo -->
   <header class="site-header">
     <nav class="site-header-inner">
       <div
-        class="glass-nav flex items-center justify-between border-white/10 border rounded-full px-4 py-2 shadow-[0_8px_32px_rgba(0,0,0,0.4)] backdrop-blur-xl">
+        class="glass-nav flex items-center justify-between border-white/10 border rounded-[20px] px-4 py-4 shadow-[0_8px_32px_rgba(0,0,0,0.4)] backdrop-blur-xl">
         <!-- Logo a la izquierda -->
         <a href="index.html" class="flex items-center gap-2 pr-4">
           <img src="img/logo.svg" alt="Clairo" class="h-5 w-auto">
@@ -76,7 +78,7 @@
 
   <!-- Hero Section -->
   <section id="hero"
-    class="relative w-full min-h-[780px] overflow-hidden bg-dark-radial-gradient-top hero-container pt-28 pb-24">
+    class="relative w-full min-h-[780px] overflow-hidden bg-dark-radial-gradient-top hero-container pt-28 pb-24 rounded-b-[40px]">
     <div class="absolute inset-0 bg-black/30"></div>
     <div class="hero-orange-gradient absolute bottom-0 left-0 right-0 h-64 pointer-events-none"></div>
 
@@ -86,9 +88,9 @@
         preserveAspectRatio="none">
         <defs>
           <linearGradient id="waveGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style="stop-color:rgba(1, 195, 141, 0.4);stop-opacity:1" />
-            <stop offset="50%" style="stop-color:rgba(1, 195, 141, 0.25);stop-opacity:1" />
-            <stop offset="100%" style="stop-color:rgba(1, 195, 141, 0.1);stop-opacity:1" />
+            <stop offset="0%" style="stop-color:rgba(92, 171, 148, 0.4);stop-opacity:1" />
+            <stop offset="50%" style="stop-color:rgba(92, 171, 148, 0.25);stop-opacity:1" />
+            <stop offset="100%" style="stop-color:rgba(92, 171, 148, 0.1);stop-opacity:1" />
           </linearGradient>
         </defs>
         <path fill="url(#waveGradient1)"
@@ -99,9 +101,9 @@
         preserveAspectRatio="none">
         <defs>
           <linearGradient id="waveGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style="stop-color:rgba(1, 195, 141, 0.3);stop-opacity:1" />
-            <stop offset="50%" style="stop-color:rgba(1, 195, 141, 0.2);stop-opacity:1" />
-            <stop offset="100%" style="stop-color:rgba(1, 195, 141, 0.05);stop-opacity:1" />
+            <stop offset="0%" style="stop-color:rgba(92, 171, 148, 0.3);stop-opacity:1" />
+            <stop offset="50%" style="stop-color:rgba(92, 171, 148, 0.2);stop-opacity:1" />
+            <stop offset="100%" style="stop-color:rgba(92, 171, 148, 0.05);stop-opacity:1" />
           </linearGradient>
         </defs>
         <path fill="url(#waveGradient2)"
@@ -112,9 +114,9 @@
         preserveAspectRatio="none">
         <defs>
           <linearGradient id="waveGradient3" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style="stop-color:rgba(1, 195, 141, 0.25);stop-opacity:1" />
-            <stop offset="50%" style="stop-color:rgba(1, 195, 141, 0.15);stop-opacity:1" />
-            <stop offset="100%" style="stop-color:rgba(1, 195, 141, 0.05);stop-opacity:1" />
+            <stop offset="0%" style="stop-color:rgba(92, 171, 148, 0.25);stop-opacity:1" />
+            <stop offset="50%" style="stop-color:rgba(92, 171, 148, 0.15);stop-opacity:1" />
+            <stop offset="100%" style="stop-color:rgba(92, 171, 148, 0.05);stop-opacity:1" />
           </linearGradient>
         </defs>
         <path fill="url(#waveGradient3)"
@@ -123,12 +125,12 @@
       </svg>
     </div>
 
-    <div class="relative z-20 container-max px-6 grid lg:grid-cols-2 gap-12 items-center">
+    <div class="relative z-20 container-max px-6">
       <!-- Columna izquierda -->
-      <div class="space-y-8 text-white max-w-xl">
+      <div class="space-y-8 text-white max-w-3xl mx-auto text-center">
         <div
           class="hero-badge inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-md relative overflow-hidden">
-          <div class="w-1.5 h-1.5 rounded-full bg-[#01C38D] animate-pulse"></div>
+          <div class="w-1.5 h-1.5 rounded-full bg-[#5CAB94] animate-pulse"></div>
           <span
             class="text-[10px] font-mono font-medium text-white/70 uppercase tracking-widest relative z-10">Workshops de
             eCommerce para gente creativa</span>
@@ -136,16 +138,16 @@
         <h1
           class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-white/70 tracking-tight leading-[1.02] drop-shadow-2xl">
           Convierte lo que te mueve en un <span
-            style="color: #01C38D; background: none; -webkit-background-clip: unset; background-clip: unset;">eCommerce</span>
+            style="color: #5CAB94; background: none; -webkit-background-clip: unset; background-clip: unset;">eCommerce</span>
           con sentido
         </h1>
         <p class="text-white/80 text-lg sm:text-xl font-medium leading-relaxed">
           Workshops en vivo para personas creativas que quieren construir un eCommerce con claridad, criterio y
           dirección.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4">
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a href="workshops.html"
-            class="bg-[#01C38D] text-black px-8 py-4 rounded-full font-semibold hover:bg-[#01A877] transition-all shadow-xl hover:scale-105 text-center"
+            class="bg-[#5CAB94] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#4a9a82] transition-all shadow-xl hover:scale-105 text-center"
             aria-label="Ver todos los workshops disponibles en Clairo">
             Ver próximos workshops
           </a>
@@ -153,82 +155,6 @@
         <p class="text-xs font-mono uppercase tracking-[0.2em] text-white/70">
           Workshops en vivo · Grupos reducidos · Metodología 100% práctica
         </p>
-      </div>
-
-      <!-- Columna derecha (visual placeholder) -->
-      <div class="hidden lg:flex justify-end">
-        <div
-          class="relative w-full max-w-md aspect-[4/5] rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden shadow-[0_24px_80px_rgba(0,0,0,0.6)]">
-          <div class="absolute inset-0 schematic-grid opacity-40"></div>
-          <div class="relative h-full flex flex-col justify-between p-6">
-            <div>
-              <h2 class="text-2xl font-semibold text-white mb-3">
-                El espacio para crear tu eCommerce
-              </h2>
-              <p class="text-base text-white/70 mb-4">
-                Imagina un grupo reducido de personas creativas, cada una trabajando sobre su caso real, tomando
-                decisiones claras sobre qué construir y qué descartar.
-              </p>
-
-              <ul class="space-y-2.5 text-lg text-white/80 mb-4">
-                <li class="flex items-start gap-2.5">
-                  <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
-                    viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Metodología práctica aplicada paso a paso</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
-                    viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Decisiones guiadas en cada sesión</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
-                    viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Acompañamiento personalizado</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
-                    viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Herramientas modernas de validación</span>
-                </li>
-                <li class="flex items-start gap-2.5">
-                  <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
-                    viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Resultados reales, sin humo ni atajos</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="space-y-3 text-base text-white/75">
-              <div class="flex items-center justify-between">
-                <span class="text-sm font-mono uppercase tracking-[0.2em] text-white/60">Workshops</span>
-                <span>Workshops en vivo</span>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-sm font-mono uppercase tracking-[0.2em] text-white/60">Formato</span>
-                <span>Online</span>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-sm font-mono uppercase tracking-[0.2em] text-white/60">Plazas</span>
-                <span>Plazas limitadas</span>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-sm font-mono uppercase tracking-[0.2em] text-white/60">AI</span>
-                <span>AI aplicada</span>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -290,13 +216,14 @@
     </section>
 
     <!-- Workshops destacados -->
-    <section id="workshops-destacados" class="section-padding bg-white">
+    <section id="workshops-destacados" class="section-padding bg-dark-radial-gradient-top rounded-[40px]"
+      style="background-color: #191E29;">
       <div class="container-max">
         <div class="max-w-3xl mx-auto text-center mb-12">
-          <h2 class="text-4xl md:text-5xl font-bold text-stone-950 mb-4">
+          <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
             Nuestros workshops
           </h2>
-          <p class="text-xl text-stone-600">
+          <p class="text-xl text-white/80">
             Sesiones prácticas donde trabajas sobre tu idea y desbloqueas camino para avanzar con claridad.
           </p>
         </div>
@@ -305,78 +232,99 @@
 
         <div class="grid md:grid-cols-3 gap-6">
           <!-- Workshop 1 -->
-          <article class="card-workshop bg-white rounded-2xl p-6 flex flex-col justify-between">
+          <article class="card-glass text-white rounded-2xl p-6 flex flex-col justify-end"
+            style="background-image: linear-gradient(135deg, rgba(92, 171, 148, 0.2) 0%, rgba(19, 45, 70, 0.4) 100%), url('img/1.png');">
+            <div class="absolute top-4 right-4 flex flex-wrap gap-2 z-10">
+              <span class="card-badge">
+                <span class="material-symbols-outlined">videocam</span>
+                <span>En vivo</span>
+              </span>
+              <span class="card-badge">
+                <span class="material-symbols-outlined">schedule</span>
+                <span>180 min</span>
+              </span>
+            </div>
             <div>
-              <h3 class="text-2xl font-semibold text-stone-950 mb-2">
+              <h3 class="text-2xl font-semibold text-white mb-2">
                 Convierte tu pasión en un eCommerce
               </h3>
-              <p class="text-sm font-medium text-[#132D46] mb-3">
+              <p class="text-sm font-medium text-[#5CAB94] mb-4">
                 Encuentra oportunidades reales de eCommerce a partir de lo que ya te apasiona.
               </p>
-              <p class="text-stone-600 text-sm mb-4">
-                En este workshop conectas tus pasiones con lo que el mercado realmente busca, validas ideas con
-                herramientas modernas y sales con una oportunidad clara sobre la que avanzar.
-              </p>
-              <div class="flex flex-col gap-1 text-xs text-stone-500 mb-4">
+              <div class="flex flex-col gap-1 text-xs text-white/70 mb-4">
                 <span>1 sesión · 180 minutos · En vivo</span>
                 <span>Próxima fecha: Próximamente</span>
               </div>
+              <a href="workshop-convierte-tu-pasion-en-un-ecommerce.html"
+                class="btn-primary inline-flex items-center justify-center text-center">
+                Ver detalles
+              </a>
             </div>
-            <a href="workshop-convierte-tu-pasion-en-un-ecommerce.html"
-              class="text-[#132D46] font-semibold hover:underline text-sm mt-2">
-              Ver detalles →
-            </a>
           </article>
 
           <!-- Workshop 2 -->
-          <article class="card-workshop bg-white rounded-2xl p-6 flex flex-col justify-between">
+          <article class="card-glass text-white rounded-2xl p-6 flex flex-col justify-end"
+            style="background-image: linear-gradient(135deg, rgba(92, 171, 148, 0.2) 0%, rgba(19, 45, 70, 0.4) 100%), url('img/2.png');">
+            <div class="absolute top-4 right-4 flex flex-wrap gap-2 z-10">
+              <span class="card-badge">
+                <span class="material-symbols-outlined">videocam</span>
+                <span>En vivo</span>
+              </span>
+              <span class="card-badge">
+                <span class="material-symbols-outlined">groups</span>
+                <span>Cupos limitados</span>
+              </span>
+            </div>
             <div>
-              <h3 class="text-2xl font-semibold text-stone-950 mb-2">
+              <h3 class="text-2xl font-semibold text-white mb-2">
                 Diseña tu modelo de negocio para eCommerce
               </h3>
-              <p class="text-sm font-medium text-[#132D46] mb-3">
+              <p class="text-sm font-medium text-[#5CAB94] mb-4">
                 Pasa de una idea suelta a un modelo de negocio que puedas explicar, validar y hacer crecer.
               </p>
-              <p class="text-stone-600 text-sm mb-4">
-                Trabajamos tu propuesta de valor, a quién ayudas, cómo llegas a esas personas y cómo conviertes esa
-                relación en ingresos sostenibles.
-              </p>
-              <div class="flex flex-col gap-1 text-xs text-stone-500 mb-4">
+              <div class="flex flex-col gap-1 text-xs text-white/70 mb-4">
                 <span># sesiones · X minutos · En vivo</span>
                 <span>Próxima fecha: Próximamente</span>
               </div>
+              <a href="workshop-disena-tu-modelo-de-negocio.html"
+                class="btn-primary inline-flex items-center justify-center text-center">
+                Ver detalles
+              </a>
             </div>
-            <a href="workshop-disena-tu-modelo-de-negocio.html"
-              class="text-[#132D46] font-semibold hover:underline text-sm mt-2">
-              Ver detalles →
-            </a>
           </article>
 
           <!-- Próximo workshop -->
-          <article
-            class="card-workshop bg-dark-radial-gradient text-white rounded-2xl p-6 flex flex-col justify-between">
+          <article class="card-glass text-white rounded-2xl p-6 flex flex-col justify-end"
+            style="background-image: linear-gradient(135deg, rgba(92, 171, 148, 0.2) 0%, rgba(19, 45, 70, 0.4) 100%), url('img/3.png');">
+            <div class="absolute top-4 right-4 flex flex-wrap gap-2 z-10">
+              <span class="card-badge">
+                <span class="material-symbols-outlined">schedule</span>
+                <span>Próximamente</span>
+              </span>
+              <span class="card-badge">
+                <span class="material-symbols-outlined">videocam</span>
+                <span>En vivo</span>
+              </span>
+            </div>
             <div>
-              <h3 class="text-2xl font-semibold mb-2">
+              <h3 class="text-2xl font-semibold text-white mb-2">
                 Próximo workshop Clairo
               </h3>
-              <p class="text-sm font-medium text-[#01C38D] mb-3">
+              <p class="text-sm font-medium text-[#5CAB94] mb-4">
                 Nuevas ediciones y formatos para seguir profundizando en tu eCommerce.
-              </p>
-              <p class="text-white/80 text-sm mb-4">
-                Déjanos tu correo para enterarte antes que nadie de los próximos workshops y nuevas fechas.
               </p>
               <div class="flex flex-col gap-1 text-xs text-white/70 mb-4">
                 <span>Próximamente · En vivo</span>
               </div>
+              <a href="#newsletter" class="btn-primary inline-flex items-center justify-center text-center">
+                Quiero enterarme primero
+              </a>
             </div>
-            <a href="#newsletter" class="text-[#01C38D] font-semibold hover:underline text-sm mt-2">
-              Quiero enterarme primero →
-            </a>
           </article>
         </div>
 
         <div class="text-center mt-12">
-          <a href="workshops.html" class="btn-primary inline-block">
+          <a href="workshops.html" class="btn-primary inline-block text-white">
             Ver todos los workshops
           </a>
         </div>
@@ -391,56 +339,50 @@
             Clairo Academy es para ti si…
           </h2>
 
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
-            <div class="bg-stone-50 rounded-xl p-5 border border-stone-200 hover:border-[#01C38D]/30 transition-colors">
-              <div class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span class="text-base text-stone-700">Tienes una <strong>idea o pasión</strong> y quieres convertirla
-                  en un <strong>eCommerce con sentido</strong>.</span>
-              </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+            <div class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm relative flex flex-col justify-end"
+              style="min-height: 280px;">
+              <span class="material-symbols-outlined"
+                style="position: absolute; top: 32px; right: 32px; font-size: 48px; color: #5CAB94; opacity: 0.6; font-family: 'Material Symbols Outlined' !important;">lightbulb</span>
+              <h3 class="text-xl font-bold text-[#191E29] mb-4 pr-12">
+                Idea o pasión
+              </h3>
+              <p class="text-sm text-stone-600">
+                Tienes una idea o pasión y quieres convertirla en un eCommerce con sentido.
+              </p>
             </div>
-            <div class="bg-stone-50 rounded-xl p-5 border border-stone-200 hover:border-[#01C38D]/30 transition-colors">
-              <div class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span class="text-base text-stone-700">Te sientes saturado por tanta información y quieres
-                  <strong>claridad</strong>.</span>
-              </div>
+            <div class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm relative flex flex-col justify-end"
+              style="min-height: 280px;">
+              <span class="material-symbols-outlined"
+                style="position: absolute; top: 32px; right: 32px; font-size: 48px; color: #5CAB94; opacity: 0.6; font-family: 'Material Symbols Outlined' !important;">visibility</span>
+              <h3 class="text-xl font-bold text-[#191E29] mb-4 pr-12">
+                Claridad
+              </h3>
+              <p class="text-sm text-stone-600">
+                Te sientes saturado por tanta información y quieres claridad.
+              </p>
             </div>
-            <div class="bg-stone-50 rounded-xl p-5 border border-stone-200 hover:border-[#01C38D]/30 transition-colors">
-              <div class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span class="text-base text-stone-700">Quieres aprender con <strong>metodología práctica</strong>, no
-                  con teorías.</span>
-              </div>
+            <div class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm relative flex flex-col justify-end"
+              style="min-height: 280px;">
+              <span class="material-symbols-outlined"
+                style="position: absolute; top: 32px; right: 32px; font-size: 48px; color: #5CAB94; opacity: 0.6; font-family: 'Material Symbols Outlined' !important;">school</span>
+              <h3 class="text-xl font-bold text-[#191E29] mb-4 pr-12">
+                Metodología práctica
+              </h3>
+              <p class="text-sm text-stone-600">
+                Quieres aprender con metodología práctica, no con teorías.
+              </p>
             </div>
-            <div class="bg-stone-50 rounded-xl p-5 border border-stone-200 hover:border-[#01C38D]/30 transition-colors">
-              <div class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span class="text-base text-stone-700">Necesitas <strong>dirección</strong> para <strong>elegir
-                    producto, validar o definir tu propuesta</strong>.</span>
-              </div>
-            </div>
-            <div class="bg-stone-50 rounded-xl p-5 border border-stone-200 hover:border-[#01C38D]/30 transition-colors">
-              <div class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span class="text-base text-stone-700">Buscas construir un <strong>negocio real</strong>, no perseguir
-                  atajos.</span>
-              </div>
+            <div class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm relative flex flex-col justify-end"
+              style="min-height: 280px;">
+              <span class="material-symbols-outlined"
+                style="position: absolute; top: 32px; right: 32px; font-size: 48px; color: #5CAB94; opacity: 0.6; font-family: 'Material Symbols Outlined' !important;">business_center</span>
+              <h3 class="text-xl font-bold text-[#191E29] mb-4 pr-12">
+                Negocio real
+              </h3>
+              <p class="text-sm text-stone-600">
+                Buscas construir un negocio real, no perseguir atajos.
+              </p>
             </div>
           </div>
 
@@ -575,8 +517,8 @@
         <div class="grid md:grid-cols-3 gap-6 mb-10">
           <article class="bg-white rounded-2xl p-6 border border-stone-200 h-full flex flex-col justify-between">
             <p class="text-stone-700 mb-4 italic text-sm">
-              “Tenía muchas ideas sueltas y ninguna dirección. Salí del workshop con una oportunidad clara y un mapa de
-              pasos. Sentí alivio y foco por primera vez.”
+              Tenía muchas ideas sueltas y ninguna dirección. Salí del workshop con una oportunidad clara y un mapa de
+              pasos. Sentí alivio y foco por primera vez.
             </p>
             <div class="text-sm text-stone-600">
               <div class="font-semibold text-stone-900">Ana</div>
@@ -585,8 +527,8 @@
           </article>
           <article class="bg-white rounded-2xl p-6 border border-stone-200 h-full flex flex-col justify-between">
             <p class="text-stone-700 mb-4 italic text-sm">
-              “No fue un taller más de teoría. Trabajamos sobre mi caso, tomé decisiones en directo y salí con una hoja
-              de ruta concreta.”
+              No fue un taller más de teoría. Trabajamos sobre mi caso, tomé decisiones en directo y salí con una hoja
+              de ruta concreta.
             </p>
             <div class="text-sm text-stone-600">
               <div class="font-semibold text-stone-900">Javier</div>
@@ -595,8 +537,8 @@
           </article>
           <article class="bg-white rounded-2xl p-6 border border-stone-200 h-full flex flex-col justify-between">
             <p class="text-stone-700 mb-4 italic text-sm">
-              “Me encantó que aquí no te venden humo. Te hacen pensar, cuestionar y tomar decisiones honestas sobre tu
-              eCommerce.”
+              Me encantó que aquí no te venden humo. Te hacen pensar, cuestionar y tomar decisiones honestas sobre tu
+              eCommerce.
             </p>
             <div class="text-sm text-stone-600">
               <div class="font-semibold text-stone-900">Mariana</div>

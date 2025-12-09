@@ -217,6 +217,50 @@ function renderWorkshopIndividual() {
   }
 }
 
+// Carrusel de reviews
+function initReviewsCarousel() {
+  const container = document.getElementById('reviews-container');
+  const dotsContainer = document.getElementById('reviews-dots');
+  
+  if (!container) return;
+
+  const slides = container.querySelectorAll('.review-slide');
+  const totalSlides = slides.length;
+  let currentSlide = 0;
+
+  // Crear dots de navegación
+  if (dotsContainer && totalSlides > 1) {
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('button');
+      dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', `Ir a review ${i + 1}`);
+      dot.addEventListener('click', () => goToSlide(i));
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function goToSlide(index) {
+    currentSlide = index;
+    container.style.transform = `translateX(-${currentSlide * 100}%)`;
+    
+    // Actualizar dots activos
+    if (dotsContainer) {
+      const dots = dotsContainer.querySelectorAll('.carousel-dot');
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentSlide);
+      });
+    }
+  }
+
+  // Auto-play cada 5 segundos
+  if (totalSlides > 1) {
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      goToSlide(currentSlide);
+    }, 5000);
+  }
+}
+
 // Ejecutar según la página
 document.addEventListener('DOMContentLoaded', function () {
   // Cargar datos de workshops
@@ -227,5 +271,8 @@ document.addEventListener('DOMContentLoaded', function () {
   if (document.getElementById('workshop-hero')) {
     renderWorkshopIndividual();
   }
+
+  // Inicializar carrusel de reviews
+  initReviewsCarousel();
 });
 

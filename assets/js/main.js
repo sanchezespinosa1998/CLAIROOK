@@ -51,17 +51,24 @@ function initFAQ() {
 
   faqQuestions.forEach(question => {
     question.addEventListener('click', function () {
+      const faqItem = this.closest('.faq-item');
       const answer = this.nextElementSibling;
       const isActive = answer.classList.contains('active');
 
-      // Cerrar todas las respuestas
+      // Cerrar todas las respuestas y remover clase active de items
       document.querySelectorAll('.faq-answer').forEach(ans => {
         ans.classList.remove('active');
+      });
+      document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.remove('active');
       });
 
       // Abrir la respuesta clicada si estaba cerrada
       if (!isActive) {
         answer.classList.add('active');
+        if (faqItem) {
+          faqItem.classList.add('active');
+        }
       }
     });
   });
