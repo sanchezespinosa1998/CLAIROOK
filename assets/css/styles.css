@@ -708,3 +708,176 @@ body {
   border-radius: 0 0 0.5rem 0;
   clip-path: polygon(0 0, calc(100% - 1.5rem) 0, 100% 100%, 0 100%);
 }
+
+/* Estilos para formulario Klaviyo - Consistente con el diseño de Clairo */
+.klaviyo-form-Ygp7gZ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.klaviyo-form-Ygp7gZ form {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Contenedores del formulario */
+.klaviyo-form-Ygp7gZ .klaviyo-form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.klaviyo-form-Ygp7gZ .klaviyo-form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+/* Labels del formulario */
+.klaviyo-form-Ygp7gZ label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--color-text);
+  font-size: 0.875rem;
+  font-family: 'Alexandria', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Inputs del formulario */
+.klaviyo-form-Ygp7gZ input[type="email"],
+.klaviyo-form-Ygp7gZ input[type="text"],
+.klaviyo-form-Ygp7gZ input[type="tel"],
+.klaviyo-form-Ygp7gZ input[type="number"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-stone-300);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  font-family: 'Alexandria', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.klaviyo-form-Ygp7gZ input[type="email"]:focus,
+.klaviyo-form-Ygp7gZ input[type="text"]:focus,
+.klaviyo-form-Ygp7gZ input[type="tel"]:focus,
+.klaviyo-form-Ygp7gZ input[type="number"]:focus {
+  outline: none;
+  border-color: var(--color-clairo-green);
+  box-shadow: 0 0 0 3px rgba(92, 171, 148, 0.1);
+}
+
+.klaviyo-form-Ygp7gZ input[type="email"]::placeholder,
+.klaviyo-form-Ygp7gZ input[type="text"]::placeholder,
+.klaviyo-form-Ygp7gZ input[type="tel"]::placeholder {
+  color: var(--color-text-light);
+  opacity: 0.6;
+}
+
+/* Botón de envío */
+.klaviyo-form-Ygp7gZ button[type="submit"],
+.klaviyo-form-Ygp7gZ .klaviyo-form-actions button,
+.klaviyo-form-Ygp7gZ input[type="submit"] {
+  background-color: var(--color-clairo-green);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-family: 'Alexandria', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.klaviyo-form-Ygp7gZ button[type="submit"]:hover,
+.klaviyo-form-Ygp7gZ .klaviyo-form-actions button:hover,
+.klaviyo-form-Ygp7gZ input[type="submit"]:hover {
+  background-color: #4a9a82;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(92, 171, 148, 0.3);
+}
+
+.klaviyo-form-Ygp7gZ button[type="submit"]:active,
+.klaviyo-form-Ygp7gZ .klaviyo-form-actions button:active,
+.klaviyo-form-Ygp7gZ input[type="submit"]:active {
+  transform: translateY(0);
+}
+
+/* Mensajes de error y éxito */
+.klaviyo-form-Ygp7gZ .klaviyo-form-error,
+.klaviyo-form-Ygp7gZ .klaviyo-form-message {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  font-family: 'Alexandria', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.klaviyo-form-Ygp7gZ .klaviyo-form-error {
+  background-color: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #dc2626;
+}
+
+.klaviyo-form-Ygp7gZ .klaviyo-form-message {
+  background-color: rgba(92, 171, 148, 0.1);
+  border: 1px solid rgba(92, 171, 148, 0.3);
+  color: var(--color-clairo-green);
+}
+
+/* Checkbox y radio buttons */
+.klaviyo-form-Ygp7gZ input[type="checkbox"],
+.klaviyo-form-Ygp7gZ input[type="radio"] {
+  width: auto;
+  margin-right: 0.5rem;
+  accent-color: var(--color-clairo-green);
+}
+
+.klaviyo-form-Ygp7gZ .klaviyo-form-checkbox-group,
+.klaviyo-form-Ygp7gZ .klaviyo-form-radio-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+/* Texto de ayuda y descripción */
+.klaviyo-form-Ygp7gZ .klaviyo-form-help-text,
+.klaviyo-form-Ygp7gZ .klaviyo-form-description {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  margin-top: 0.25rem;
+  font-family: 'Alexandria', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Responsive - Layout horizontal en pantallas grandes si hay múltiples campos */
+@media (min-width: 768px) {
+  .klaviyo-form-Ygp7gZ .klaviyo-form-row {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .klaviyo-form-Ygp7gZ .klaviyo-form-group {
+    flex: 1;
+  }
+  
+  .klaviyo-form-Ygp7gZ button[type="submit"],
+  .klaviyo-form-Ygp7gZ .klaviyo-form-actions button,
+  .klaviyo-form-Ygp7gZ input[type="submit"] {
+    width: auto;
+    min-width: 200px;
+  }
+}
