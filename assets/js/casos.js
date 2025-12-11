@@ -63,7 +63,7 @@ function renderTestimonios() {
     card.className = 'bg-stone-50 rounded-lg p-6 mb-6 border-l-4 border-[#132D46]';
 
     card.innerHTML = `
-      <p class="text-stone-700 mb-4 italic">"${testimonio.texto}"</p>
+      <p class="text-stone-700 mb-4">"${testimonio.texto}"</p>
       <div class="flex items-center gap-2">
         <div class="w-12 h-12 rounded-full bg-stone-200 flex items-center justify-center">
           <span class="text-stone-600 font-semibold">${testimonio.nombre.charAt(0)}</span>
