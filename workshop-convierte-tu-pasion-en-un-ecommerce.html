@@ -12,8 +12,10 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <link
-    href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -22,36 +24,32 @@
   <!-- Header global fijo -->
   <header class="site-header">
     <nav class="site-header-inner">
-      <div
-        class="glass-nav flex items-center justify-between border-white/10 border rounded-[20px] px-4 py-4 shadow-[0_8px_32px_rgba(0,0,0,0.4)] backdrop-blur-xl">
+      <div class="glass-nav">
         <!-- Logo a la izquierda -->
-        <a href="index.html" class="flex items-center gap-2 pr-4">
-          <img src="img/logo.svg" alt="Clairo" class="h-5 w-auto">
+        <a href="index.html" class="nav-logo">
+          <img src="img/logo.svg" alt="Clairo" class="h-6 w-auto brightness-0 invert">
         </a>
 
-        <!-- Enlaces a la derecha (desktop) + botón móvil -->
-        <div class="flex items-center gap-2">
-          <div class="hidden md:flex items-center gap-1">
-            <a href="index.html"
-              class="text-[11px] font-medium text-white/80 hover:text-white uppercase tracking-wider px-3 py-1.5 rounded-full hover:bg-white/10 transition-all font-mono">Home</a>
-            <a href="workshops.html"
-              class="text-[11px] font-medium text-white uppercase tracking-wider px-3 py-1.5 rounded-full bg-white/10 font-mono">Workshops</a>
-            <a href="sobre-clairo.html"
-              class="text-[11px] font-medium text-white/80 hover:text-white uppercase tracking-wider px-3 py-1.5 rounded-full hover:bg-white/10 transition-all font-mono">Sobre
-              Clairo</a>
-            <a href="casos.html"
-              class="text-[11px] font-medium text-white/80 hover:text-white uppercase tracking-wider px-3 py-1.5 rounded-full hover:bg-white/10 transition-all font-mono">Casos</a>
-            <a href="#cta-final"
-              class="text-[11px] font-medium text-white/80 hover:text-white uppercase tracking-wider px-3 py-1.5 rounded-full hover:bg-white/10 transition-all font-mono bg-[#5CAB94]/20">Reserva tu lugar</a>
-          </div>
+        <!-- Enlaces centrados -->
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="workshops.html" class="nav-link">Workshops</a>
+          <a href="sobre-clairo.html" class="nav-link">Sobre Clairo</a>
+          <a href="casos.html" class="nav-link">Casos</a>
+        </nav>
 
-          <button class="md:hidden p-2 text-white mobile-menu-button" aria-label="Abrir menú de navegación">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 5h16M4 12h16M4 19h16"></path>
-            </svg>
-          </button>
-        </div>
+        <!-- CTA a la derecha -->
+        <a href="#cta-final" class="nav-cta">
+          <span>Reserva tu lugar</span>
+        </a>
+
+        <!-- Botón móvil -->
+        <button class="mobile-menu-button" aria-label="Abrir menú de navegación">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 5h16M4 12h16M4 19h16"></path>
+          </svg>
+        </button>
       </div>
     </nav>
   </header>
@@ -76,7 +74,7 @@
 
   <main>
     <!-- Hero -->
-    <section id="hero" class="bg-dark-radial-gradient-top text-white py-20">
+    <section id="hero" class="bg-dark-radial-gradient-top text-white pt-36 pb-20">
       <div class="container-max px-6">
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div>

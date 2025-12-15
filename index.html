@@ -22,36 +22,38 @@
   <!-- Header global fijo -->
   <header class="site-header">
     <nav class="site-header-inner">
-      <div
-        class="glass-nav flex items-center justify-between border-white/10 border rounded-[20px] px-4 py-4 shadow-[0_8px_32px_rgba(0,0,0,0.4)] backdrop-blur-xl">
+      <div class="glass-nav">
         <!-- Logo a la izquierda -->
-        <a href="index.html" class="flex items-center gap-2 pr-4">
-          <img src="img/logo.svg" alt="Clairo" class="h-5 w-auto">
+        <a href="index.html" class="nav-logo">
+          <img src="img/logo.svg" alt="Clairo" class="h-6 w-auto brightness-0 invert">
         </a>
 
-        <!-- Enlaces a la derecha (desktop) + botón móvil -->
-        <div class="flex items-center gap-2">
-          <div class="hidden md:flex items-center gap-1">
-            <a href="index.html"
-              class="text-[11px] font-medium text-white/80 hover:text-white uppercase tracking-wider px-3 py-1.5 rounded-full hover:bg-white/10 transition-all font-mono">Home</a>
-            <a href="workshops.html"
-              class="text-[11px] font-medium text-white/80 hover:text-white uppercase tracking-wider px-3 py-1.5 rounded-full hover:bg-white/10 transition-all font-mono">Workshops</a>
-            <a href="sobre-clairo.html"
-              class="text-[11px] font-medium text-white/80 hover:text-white uppercase tracking-wider px-3 py-1.5 rounded-full hover:bg-white/10 transition-all font-mono">Sobre
-              Clairo</a>
-            <a href="casos.html"
-              class="text-[11px] font-medium text-white/80 hover:text-white uppercase tracking-wider px-3 py-1.5 rounded-full hover:bg-white/10 transition-all font-mono">Casos</a>
-            <a href="contacto.html"
-              class="text-[11px] font-medium text-white/80 hover:text-white uppercase tracking-wider px-3 py-1.5 rounded-full hover:bg-white/10 transition-all font-mono bg-[#5CAB94]/20">Contacto</a>
-          </div>
+        <!-- Enlaces centrados -->
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="workshops.html" class="nav-link">Workshops</a>
+          <a href="sobre-clairo.html" class="nav-link">Sobre Clairo</a>
+          <a href="casos.html" class="nav-link">Casos</a>
+        </nav>
 
-          <button class="md:hidden p-2 text-white mobile-menu-button" aria-label="Abrir menú de navegación">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 5h16M4 12h16M4 19h16"></path>
-            </svg>
-          </button>
-        </div>
+        <!-- CTA a la derecha -->
+        <a href="contacto.html" class="nav-cta">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+          </svg>
+          <span>Agenda una llamada</span>
+        </a>
+
+        <!-- Botón móvil -->
+        <button class="mobile-menu-button" aria-label="Abrir menú de navegación">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 5h16M4 12h16M4 19h16"></path>
+          </svg>
+        </button>
       </div>
     </nav>
   </header>
@@ -76,7 +78,7 @@
 
   <!-- Hero Section -->
   <section id="hero"
-    class="relative w-full min-h-[780px] overflow-hidden bg-dark-radial-gradient-top hero-container pt-28 pb-24 rounded-b-[40px]">
+    class="relative w-full min-h-[780px] overflow-hidden bg-dark-radial-gradient-top hero-container pt-36 pb-24 rounded-b-[40px]">
     <div class="absolute inset-0 bg-black/30"></div>
     <div class="hero-orange-gradient absolute bottom-0 left-0 right-0 h-64 pointer-events-none"></div>
 
@@ -164,11 +166,14 @@
     <section id="propuesta-valor" class="section-padding" style="background-color: #F9F9F9;">
       <div class="container-max">
         <div class="max-w-5xl mx-auto">
-          <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center" style="color: #5CAB94;">
-            Aprende eCommerce de verdad: práctico, claro y sin ruido
+          <h2 class="text-4xl md:text-5xl font-bold mb-4 text-center" style="color: #5CAB94;">
+            Aprende eCommerce de verdad
           </h2>
+          <p class="text-xl md:text-2xl text-center mb-12" style="color: rgba(25, 30, 41, 0.7);">
+            Práctico, claro y sin ruido
+          </p>
           <div class="grid md:grid-cols-2 gap-4">
-            <div class="card-transparent rounded-xl p-6">
+            <div class="card-glass-section rounded-xl p-6">
               <div class="flex items-start gap-3">
                 <svg class="w-6 h-6 mt-0.5 shrink-0" style="color: #5CAB94;" fill="none" stroke="currentColor"
                   viewBox="0 0 24 24">
@@ -176,46 +181,46 @@
                 </svg>
                 <div>
                   <span class="text-xl font-bold block mb-1" style="color: #5CAB94;">Workshops en vivo</span>
-                  <span class="text-sm" style="color: rgba(25, 30, 41, 0.8);">Dinámicos y guiados por metodología
+                  <span class="text-sm card-text-section">Dinámicos y guiados por metodología
                     estratégica.</span>
                 </div>
               </div>
             </div>
-            <div class="card-transparent rounded-xl p-6">
+            <div class="card-glass-section rounded-xl p-6">
               <div class="flex items-start gap-3">
-                <svg class="w-6 h-6 mt-0.5 shrink-0" style="color: #5CAB94;" fill="none" stroke="currentColor"
+                <svg class="w-6 h-6 mt-0.5 shrink-0" style="color: #93C5FD;" fill="none" stroke="currentColor"
                   viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
                 <div>
-                  <span class="text-xl font-bold block mb-1" style="color: #5CAB94;">Práctica aplicada</span>
-                  <span class="text-sm" style="color: rgba(25, 30, 41, 0.8);">Con AI, para que tomes decisiones con
+                  <span class="text-xl font-bold block mb-1" style="color: #93C5FD;">Práctica aplicada con IA</span>
+                  <span class="text-sm card-text-section">Para que tomes decisiones con
                     datos y claridad.</span>
                 </div>
               </div>
             </div>
-            <div class="card-transparent rounded-xl p-6">
+            <div class="card-glass-section rounded-xl p-6">
               <div class="flex items-start gap-3">
-                <svg class="w-6 h-6 mt-0.5 shrink-0" style="color: #5CAB94;" fill="none" stroke="currentColor"
+                <svg class="w-6 h-6 mt-0.5 shrink-0" style="color: #A855F7;" fill="none" stroke="currentColor"
                   viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
                 <div>
-                  <span class="text-xl font-bold block mb-1" style="color: #5CAB94;">Creatividad</span>
-                  <span class="text-sm" style="color: rgba(25, 30, 41, 0.8);">Enfocada en oportunidades reales, no en
+                  <span class="text-xl font-bold block mb-1" style="color: #A855F7;">Creatividad</span>
+                  <span class="text-sm card-text-section">Enfocada en oportunidades reales, no en
                     ideas al aire.</span>
                 </div>
               </div>
             </div>
-            <div class="card-transparent rounded-xl p-6">
+            <div class="card-glass-section rounded-xl p-6">
               <div class="flex items-start gap-3">
-                <svg class="w-6 h-6 mt-0.5 shrink-0" style="color: #5CAB94;" fill="none" stroke="currentColor"
+                <svg class="w-6 h-6 mt-0.5 shrink-0" style="color: #FB923C;" fill="none" stroke="currentColor"
                   viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
                 <div>
-                  <span class="text-xl font-bold block mb-1" style="color: #5CAB94;">Proyectos sólidos</span>
-                  <span class="text-sm" style="color: rgba(25, 30, 41, 0.8);">Sin humo ni falsas promesas: aprendemos a
+                  <span class="text-xl font-bold block mb-1" style="color: #FB923C;">Proyectos sólidos</span>
+                  <span class="text-sm card-text-section">Sin humo ni falsas promesas: aprendemos a
                     construir desde la
                     base.</span>
                 </div>
@@ -249,7 +254,7 @@
               <h3 class="text-2xl font-semibold text-white mb-2">
                 Convierte tu pasión en un eCommerce
               </h3>
-              <p class="text-sm font-medium text-[#5CAB94] mb-4">
+              <p class="text-sm font-medium text-white mb-4">
                 Encuentra oportunidades reales de eCommerce a partir de lo que ya te apasiona.
               </p>
               <div class="flex flex-wrap gap-2 mb-4">
@@ -277,6 +282,12 @@
                     style="font-family: 'Material Symbols Outlined' !important; font-size: 1rem;">event_available</span>
                   <span>Próximamente</span>
                 </span>
+                <span class="chip"
+                  style="background: rgba(15, 23, 42, 0.7); border-color: rgba(148, 163, 184, 0.6); color: #E5E7EB;">
+                  <img src="img/perplexity.svg" alt="Perplexity" class="h-4 w-4"
+                    style="filter: brightness(0) invert(1);">
+                  <span>Con Perplexity</span>
+                </span>
               </div>
               <a href="workshop-convierte-tu-pasion-en-un-ecommerce.html"
                 class="btn-primary w-full inline-flex items-center justify-center text-center"
@@ -293,7 +304,7 @@
               <h3 class="text-2xl font-semibold text-white mb-2">
                 Diseña tu modelo de negocio para eCommerce
               </h3>
-              <p class="text-sm font-medium text-[#5CAB94] mb-4">
+              <p class="text-sm font-medium text-white mb-4">
                 Pasa de una idea suelta a un modelo de negocio que puedas explicar, validar y hacer crecer.
               </p>
               <div class="flex flex-wrap gap-2 mb-4">
@@ -337,7 +348,7 @@
               <h3 class="text-2xl font-semibold text-white mb-2">
                 Próximo workshop Clairo
               </h3>
-              <p class="text-sm font-medium text-[#5CAB94] mb-4">
+              <p class="text-sm font-medium text-white mb-4">
                 Nuevas ediciones y formatos para seguir profundizando en tu eCommerce.
               </p>
               <div class="flex flex-wrap gap-2 mb-4">
@@ -379,47 +390,51 @@
           </h2>
 
           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-            <div class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm relative flex flex-col justify-end"
+            <div
+              class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm flex flex-col justify-start items-start text-left"
               style="min-height: 280px;">
-              <span class="material-symbols-outlined"
-                style="position: absolute; top: 32px; right: 32px; font-size: 48px; color: #5CAB94; opacity: 0.6; font-family: 'Material Symbols Outlined' !important;">lightbulb</span>
-              <h3 class="text-xl font-bold text-[#191E29] mb-4 pr-12">
+              <span class="material-symbols-outlined mb-4"
+                style="font-size: 48px; color: #5CAB94; font-family: 'Material Symbols Outlined' !important;">lightbulb</span>
+              <h3 class="text-xl font-bold text-[#191E29] mb-4 text-left w-full">
                 Idea o pasión
               </h3>
-              <p class="text-sm text-stone-600">
+              <p class="text-sm text-stone-600 text-left w-full">
                 Tienes una idea o pasión y quieres convertirla en un eCommerce con sentido.
               </p>
             </div>
-            <div class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm relative flex flex-col justify-end"
+            <div
+              class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm flex flex-col justify-start items-start text-left"
               style="min-height: 280px;">
-              <span class="material-symbols-outlined"
-                style="position: absolute; top: 32px; right: 32px; font-size: 48px; color: #5CAB94; opacity: 0.6; font-family: 'Material Symbols Outlined' !important;">visibility</span>
-              <h3 class="text-xl font-bold text-[#191E29] mb-4 pr-12">
+              <span class="material-symbols-outlined mb-4"
+                style="font-size: 48px; color: #93C5FD; font-family: 'Material Symbols Outlined' !important;">visibility</span>
+              <h3 class="text-xl font-bold text-[#191E29] mb-4 text-left w-full">
                 Claridad
               </h3>
-              <p class="text-sm text-stone-600">
+              <p class="text-sm text-stone-600 text-left w-full">
                 Te sientes saturado por tanta información y quieres claridad.
               </p>
             </div>
-            <div class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm relative flex flex-col justify-end"
+            <div
+              class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm flex flex-col justify-start items-start text-left"
               style="min-height: 280px;">
-              <span class="material-symbols-outlined"
-                style="position: absolute; top: 32px; right: 32px; font-size: 48px; color: #5CAB94; opacity: 0.6; font-family: 'Material Symbols Outlined' !important;">school</span>
-              <h3 class="text-xl font-bold text-[#191E29] mb-4 pr-12">
+              <span class="material-symbols-outlined mb-4"
+                style="font-size: 48px; color: #A855F7; font-family: 'Material Symbols Outlined' !important;">school</span>
+              <h3 class="text-xl font-bold text-[#191E29] mb-4 text-left w-full">
                 Metodología práctica
               </h3>
-              <p class="text-sm text-stone-600">
+              <p class="text-sm text-stone-600 text-left w-full">
                 Quieres aprender con metodología práctica, no con teorías.
               </p>
             </div>
-            <div class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm relative flex flex-col justify-end"
+            <div
+              class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm flex flex-col justify-start items-start text-left"
               style="min-height: 280px;">
-              <span class="material-symbols-outlined"
-                style="position: absolute; top: 32px; right: 32px; font-size: 48px; color: #5CAB94; opacity: 0.6; font-family: 'Material Symbols Outlined' !important;">business_center</span>
-              <h3 class="text-xl font-bold text-[#191E29] mb-4 pr-12">
+              <span class="material-symbols-outlined mb-4"
+                style="font-size: 48px; color: #FB923C; font-family: 'Material Symbols Outlined' !important;">business_center</span>
+              <h3 class="text-xl font-bold text-[#191E29] mb-4 text-left w-full">
                 Negocio real
               </h3>
-              <p class="text-sm text-stone-600">
+              <p class="text-sm text-stone-600 text-left w-full">
                 Buscas construir un negocio real, no perseguir atajos.
               </p>
             </div>
@@ -437,74 +452,86 @@
     <!-- Diferencial -->
     <section id="diferencial" class="section-padding bg-stone-50">
       <div class="container-max">
-        <div class="max-w-5xl mx-auto">
+        <div class="max-w-6xl mx-auto">
           <h2 class="text-4xl md:text-5xl font-bold text-stone-950 mb-12 text-center">
             ¿Por qué Clairo Academy es diferente?
           </h2>
 
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
-            <div class="bg-white rounded-xl p-5 border border-stone-200 hover:border-[#01C38D]/30 transition-colors">
-              <div class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span class="text-base text-stone-700">Aprendes <strong>pensando</strong>, no repitiendo. Desarrollas
-                  <strong>criterio</strong>, no recetas.</span>
+          <div class="grid md:grid-cols-2 gap-8 items-start">
+            <!-- Imagen a la izquierda -->
+            <div class="hidden md:block">
+              <div class="rounded-2xl overflow-hidden shadow-lg w-full" style="max-height: 600px;">
+                <img src="img/4.png" alt="Clairo Academy" class="w-full h-full object-cover">
               </div>
             </div>
-            <div class="bg-white rounded-xl p-5 border border-stone-200 hover:border-[#01C38D]/30 transition-colors">
-              <div class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span class="text-base text-stone-700"><strong>Metodología propia</strong>, basada en <strong>claridad,
-                    estructura y decisión</strong>.</span>
+
+            <!-- Tarjetas apiladas a la derecha -->
+            <div class="space-y-4 flex flex-col h-full">
+              <div class="bg-white rounded-xl p-5 border border-stone-200 hover:border-[#01C38D]/30 transition-colors">
+                <div class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-base text-stone-700">Aprendes <strong>pensando</strong>, no repitiendo. Desarrollas
+                    <strong>criterio</strong>, no recetas.</span>
+                </div>
               </div>
-            </div>
-            <div class="bg-white rounded-xl p-5 border border-stone-200 hover:border-[#01C38D]/30 transition-colors">
-              <div class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span class="text-base text-stone-700"><strong>Casos reales</strong>, no ejemplos inventados.</span>
+              <div class="bg-white rounded-xl p-5 border border-stone-200 hover:border-[#01C38D]/30 transition-colors">
+                <div class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-base text-stone-700"><strong>Metodología propia</strong>, basada en
+                    <strong>claridad,
+                      estructura y decisión</strong>.</span>
+                </div>
               </div>
-            </div>
-            <div class="bg-white rounded-xl p-5 border border-stone-200 hover:border-[#01C38D]/30 transition-colors">
-              <div class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span class="text-base text-stone-700"><strong>Acompañamiento cercano</strong>, en <strong>grupos
-                    reducidos</strong>.</span>
+              <div class="bg-white rounded-xl p-5 border border-stone-200 hover:border-[#01C38D]/30 transition-colors">
+                <div class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-base text-stone-700"><strong>Casos reales</strong>, no ejemplos inventados.</span>
+                </div>
               </div>
-            </div>
-            <div class="bg-white rounded-xl p-5 border border-stone-200 hover:border-[#01C38D]/30 transition-colors">
-              <div class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span class="text-base text-stone-700">AI como <strong>herramienta estratégica</strong>, no como
-                  moda.</span>
+              <div class="bg-white rounded-xl p-5 border border-stone-200 hover:border-[#01C38D]/30 transition-colors">
+                <div class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-base text-stone-700"><strong>Acompañamiento cercano</strong>, en <strong>grupos
+                      reducidos</strong>.</span>
+                </div>
               </div>
-            </div>
-            <div class="bg-white rounded-xl p-5 border border-stone-200 hover:border-[#01C38D]/30 transition-colors">
-              <div class="flex items-start gap-3">
-                <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span class="text-base text-stone-700">Sin promesas irreales: enseñamos desde el <strong>propósito y la
-                    viabilidad</strong>.</span>
+              <div class="bg-white rounded-xl p-5 border border-stone-200 hover:border-[#01C38D]/30 transition-colors">
+                <div class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-base text-stone-700">AI como <strong>herramienta estratégica</strong>, no como
+                    moda.</span>
+                </div>
+              </div>
+              <div class="bg-white rounded-xl p-5 border border-stone-200 hover:border-[#01C38D]/30 transition-colors">
+                <div class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-[#01C38D] mt-0.5 shrink-0" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-base text-stone-700">Sin promesas irreales: enseñamos desde el <strong>propósito y
+                      la
+                      viabilidad</strong>.</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="text-center">
+          <div class="text-center mt-12">
             <a href="workshops.html" class="btn-secondary inline-block">
               Ver los workshops pensados para ti
             </a>
@@ -605,7 +632,7 @@
         </h2>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="workshops.html"
-            class="bg-[#01C38D] text-black px-8 py-4 rounded-full font-semibold hover:bg-[#01A877] transition-all shadow-xl inline-block">
+            class="bg-[#5CAB94] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#4a9a82] transition-all shadow-xl inline-block">
             Ver próximos workshops
           </a>
         </div>
@@ -725,7 +752,7 @@
           Da el primer paso con calma, claridad y criterio.
         </h2>
         <a href="workshops.html"
-          class="bg-[#01C38D] text-black px-8 py-4 rounded-full font-semibold hover:bg-[#01A877] transition-all shadow-xl inline-block">
+          class="bg-[#5CAB94] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#4a9a82] transition-all shadow-xl inline-block">
           Ver workshops disponibles
         </a>
       </div>
