@@ -32,7 +32,23 @@
         <!-- Enlaces centrados -->
         <nav class="nav-links">
           <a href="index.html" class="nav-link">Home</a>
-          <a href="workshops.html" class="nav-link">Workshops</a>
+          <div class="nav-dropdown relative">
+            <a href="workshops.html" class="nav-link">Workshops</a>
+            <div
+              class="nav-dropdown-menu absolute top-full left-1/2 -translate-x-1/2 w-64 bg-white/95 backdrop-blur-xl rounded-2xl border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.4)] p-4 opacity-0 invisible transition-all duration-300 pointer-events-none"
+              style="margin-top: 0.75rem;">
+              <a href="workshops.html"
+                class="block py-2 px-3 text-sm text-stone-950 hover:bg-stone-100 rounded-lg transition-colors font-sans">Ver
+                todos los workshops</a>
+              <div class="border-t border-stone-200 my-2"></div>
+              <a href="workshop-convierte-tu-pasion-en-un-ecommerce.html"
+                class="block py-2 px-3 text-sm text-stone-950 hover:bg-stone-100 rounded-lg transition-colors font-sans">Convierte
+                tu pasión en un eCommerce</a>
+              <a href="workshop-disena-tu-modelo-de-negocio.html"
+                class="block py-2 px-3 text-sm text-stone-950 hover:bg-stone-100 rounded-lg transition-colors font-sans">Diseña
+                tu modelo de negocio</a>
+            </div>
+          </div>
           <a href="sobre-clairo.html" class="nav-link">Sobre Clairo</a>
           <a href="casos.html" class="nav-link">Casos</a>
         </nav>
@@ -55,19 +71,20 @@
 
   <!-- Menú móvil flotante -->
   <div
-    class="mobile-menu hidden fixed top-20 left-1/2 -translate-x-1/2 w-[90%] max-w-md z-50 glass-nav rounded-2xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)] backdrop-blur-xl p-6">
+    class="mobile-menu hidden fixed top-20 left-1/2 -translate-x-1/2 w-[90%] max-w-md z-50 rounded-2xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)] p-6"
+    style="background: #5CAB94;">
     <div class="flex flex-col gap-4">
       <a href="index.html"
-        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-mono">Home</a>
+        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">Home</a>
       <a href="workshops.html"
-        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-mono">Workshops</a>
+        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">Workshops</a>
       <a href="sobre-clairo.html"
-        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-mono">Sobre
+        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">Sobre
         Clairo</a>
       <a href="casos.html"
-        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-mono">Casos</a>
+        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">Casos</a>
       <a href="contacto.html"
-        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-mono bg-[#5CAB94]/20">Contacto</a>
+        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">Contacto</a>
     </div>
   </div>
 
