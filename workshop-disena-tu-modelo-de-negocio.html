@@ -12,11 +12,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -85,7 +85,8 @@
       <a href="casos.html"
         class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">Casos</a>
       <a href="#cta-final"
-        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">Reserva tu lugar</a>
+        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">Reserva
+        tu lugar</a>
     </div>
   </div>
 
@@ -93,9 +94,8 @@
     <!-- Hero -->
     <section id="hero" class="bg-dark-radial-gradient-top text-white pt-36 pb-20">
       <div class="container-max px-6">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="max-w-4xl mx-auto text-center">
           <div>
-            <p class="text-xs font-mono uppercase tracking-[0.2em] text-[#01C38D]/80 mb-3">Workshop en vivo</p>
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
               Diseña tu modelo de negocio para eCommerce
             </h1>
@@ -103,42 +103,11 @@
               Aprende a construir un modelo de negocio sólido, estructurado y diseñado para funcionar, incluso si aún no
               tienes una idea clara.
             </p>
-            <p class="text-sm text-white/70 mb-6">
-              Duración: # de sesiones · X mins · En vivo · Cupos limitados
-            </p>
-            <a href="#cta-final"
-              class="bg-[#01C38D] text-black px-8 py-3 rounded-full font-semibold hover:bg-[#01A877] transition-all shadow-lg inline-flex items-center gap-2">
-              Reserva tu lugar
-            </a>
-          </div>
-          <div>
-            <div
-              class="relative rounded-3xl border border-white/10 bg-gradient-to-br from-stone-900 to-stone-800 p-8 h-full flex flex-col justify-between overflow-hidden">
-              <div class="absolute inset-0 opacity-[0.08] pointer-events-none schematic-grid"></div>
-              <div class="relative space-y-4">
-                <p class="text-sm text-white/70">
-                  Workshop práctico enfocado en ayudarte a traducir tus ideas y contexto en un modelo de negocio de
-                  eCommerce claro, coherente y listo para validar.
-                </p>
-                <ul class="space-y-2 text-sm text-white/80">
-                  <li class="flex gap-2">
-                    <span class="mt-1">✓</span>
-                    <span>Estructura paso a paso para diseñar tu modelo de negocio.</span>
-                  </li>
-                  <li class="flex gap-2">
-                    <span class="mt-1">✓</span>
-                    <span>Trabajo práctico sobre tu caso real, no teoría desconectada.</span>
-                  </li>
-                  <li class="flex gap-2">
-                    <span class="mt-1">✓</span>
-                    <span>Base sólida para avanzar después hacia producto, oferta y validación.</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="relative mt-8 pt-6 border-t border-white/10 text-sm text-white/70">
-                <p>Ideal si quieres dejar de dar vueltas con ideas sueltas y construir un modelo de negocio entendible y
-                  accionable.</p>
-              </div>
+            <div class="flex flex-wrap gap-4 justify-center">
+              <a href="#cta-final"
+                class="bg-[#5CAB94] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#4a9a82] transition-all shadow-lg">
+                Reserva tu lugar
+              </a>
             </div>
           </div>
         </div>
@@ -149,24 +118,34 @@
     <section id="quick-info" class="section-padding bg-stone-50">
       <div class="container-max px-6">
         <div class="max-w-5xl mx-auto">
-          <h2 class="text-3xl md:text-4xl font-bold text-stone-950 mb-8 text-center">Información rápida</h2>
-          <div class="grid md:grid-cols-3 gap-6 mb-10">
-            <div class="bg-white border border-stone-200 rounded-2xl p-6 text-center">
-              <p class="text-sm text-stone-500 mb-1">Sesiones</p>
-              <p class="text-xl font-semibold text-stone-950"># sesiones</p>
-            </div>
-            <div class="bg-white border border-stone-200 rounded-2xl p-6 text-center">
-              <p class="text-sm text-stone-500 mb-1">Duración</p>
-              <p class="text-xl font-semibold text-stone-950">X minutos</p>
-            </div>
-            <div class="bg-white border border-stone-200 rounded-2xl p-6 text-center">
-              <p class="text-sm text-stone-500 mb-1">Formato</p>
-              <p class="text-xl font-semibold text-stone-950">En vivo</p>
-            </div>
+          <div class="flex flex-wrap justify-center gap-4 mb-10">
+            <span class="chip"
+              style="background: rgba(92, 171, 148, 0.15); border-color: rgba(92, 171, 148, 0.4); color: #5CAB94; border-radius: 0.5rem; padding: 1.5rem 2.5rem; font-size: 1.25rem;">
+              <span class="material-symbols-outlined"
+                style="font-family: 'Material Symbols Outlined' !important; font-size: 1.75rem;">event</span>
+              <span># sesiones</span>
+            </span>
+            <span class="chip"
+              style="background: rgba(147, 197, 253, 0.15); border-color: rgba(147, 197, 253, 0.4); color: #93C5FD; border-radius: 0.5rem; padding: 1.5rem 2.5rem; font-size: 1.25rem;">
+              <span class="material-symbols-outlined"
+                style="font-family: 'Material Symbols Outlined' !important; font-size: 1.75rem;">schedule</span>
+              <span>X minutos</span>
+            </span>
+            <span class="chip"
+              style="background: rgba(251, 146, 60, 0.15); border-color: rgba(251, 146, 60, 0.4); color: #FB923C; border-radius: 0.5rem; padding: 1.5rem 2.5rem; font-size: 1.25rem;">
+              <span class="material-symbols-outlined"
+                style="font-family: 'Material Symbols Outlined' !important; font-size: 1.75rem;">videocam</span>
+              <span>En vivo</span>
+            </span>
+            <span class="chip"
+              style="background: rgba(168, 85, 247, 0.15); border-color: rgba(168, 85, 247, 0.4); color: #A855F7; border-radius: 0.5rem; padding: 1.5rem 2.5rem; font-size: 1.25rem;">
+              <span class="material-symbols-outlined"
+                style="font-family: 'Material Symbols Outlined' !important; font-size: 1.75rem;">group</span>
+              <span>Cupos limitados</span>
+            </span>
           </div>
 
           <div class="bg-white border border-stone-200 rounded-2xl p-6">
-            <h3 class="text-sm font-semibold text-stone-500 uppercase tracking-[0.2em] mb-4">Horarios orientativos</h3>
             <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 text-sm">
               <div class="flex flex-col border border-stone-100 rounded-xl p-3">
                 <span class="font-semibold flex items-center gap-2">
@@ -200,38 +179,60 @@
               </div>
             </div>
           </div>
+          <div class="text-center mt-8">
+            <a href="#cta-final"
+              class="bg-[#5CAB94] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#4a9a82] transition-all shadow-lg inline-block">
+              Registrarme ahora
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Lo que te llevarás -->
-    <section id="learning-outcomes" class="section-padding">
+    <!-- Beneficios -->
+    <section id="benefits" class="section-padding">
       <div class="container-max px-6">
         <div class="max-w-5xl mx-auto">
-          <h2 class="text-3xl md:text-4xl font-bold text-stone-950 mb-8 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#5CAB94] mb-8 text-center">
             Lo que te llevarás de este workshop
           </h2>
           <div class="grid md:grid-cols-2 gap-6">
             <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6">
-              <h3 class="text-xl font-semibold mb-2">Claridad estratégica</h3>
+              <div class="flex items-start gap-3 mb-3">
+                <span class="material-symbols-outlined text-[#5CAB94] text-3xl"
+                  style="font-family: 'Material Symbols Outlined' !important;">target</span>
+                <h3 class="text-xl font-semibold">Claridad estratégica</h3>
+              </div>
               <p class="text-stone-600">
                 Aprenderás a estructurar un modelo de negocio sólido que puedas validar y ejecutar.
               </p>
             </div>
             <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6">
-              <h3 class="text-xl font-semibold mb-2">Transformación real</h3>
+              <div class="flex items-start gap-3 mb-3">
+                <span class="material-symbols-outlined text-[#93C5FD] text-3xl"
+                  style="font-family: 'Material Symbols Outlined' !important;">transform</span>
+                <h3 class="text-xl font-semibold">Transformación real</h3>
+              </div>
               <p class="text-stone-600">
                 Pasarás de ideas dispersas a un modelo accionable y alineado con oportunidades reales.
               </p>
             </div>
             <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6">
-              <h3 class="text-xl font-semibold mb-2">Resultados medibles</h3>
+              <div class="flex items-start gap-3 mb-3">
+                <span class="material-symbols-outlined text-[#FB923C] text-3xl"
+                  style="font-family: 'Material Symbols Outlined' !important;">bar_chart</span>
+                <h3 class="text-xl font-semibold">Resultados medibles</h3>
+              </div>
               <p class="text-stone-600">
                 Saldrás con un modelo definido, validado y listo para avanzar hacia tu eCommerce.
               </p>
             </div>
             <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6">
-              <h3 class="text-xl font-semibold mb-2">Material extra opcional</h3>
+              <div class="flex items-start gap-3 mb-3">
+                <span class="material-symbols-outlined text-[#A855F7] text-3xl"
+                  style="font-family: 'Material Symbols Outlined' !important;">description</span>
+                <h3 class="text-xl font-semibold">Material extra opcional</h3>
+              </div>
               <p class="text-stone-600">
                 Plantillas descargables para continuar optimizando tu modelo una vez finalice el workshop.
               </p>
@@ -248,32 +249,47 @@
           <h2 class="text-3xl md:text-4xl font-bold text-stone-950 mb-6 text-center">
             Este workshop es para ti si…
           </h2>
-          <ul class="space-y-4 text-lg">
-            <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-[#132D46] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="space-y-4">
+            <div class="bg-white border border-stone-200 rounded-xl p-4 flex items-start gap-3">
+              <svg class="w-6 h-6 text-[#5CAB94] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
               </svg>
-              <span>Estás explorando abrir un eCommerce como fuente de ingresos.</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-[#132D46] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <span class="text-stone-950">Estás explorando abrir un eCommerce como <strong>fuente de ingresos</strong>.</span>
+            </div>
+            <div class="bg-white border border-stone-200 rounded-xl p-4 flex items-start gap-3">
+              <svg class="w-6 h-6 text-[#5CAB94] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
               </svg>
-              <span>Quieres lanzar tu primer eCommerce con una base sólida.</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-[#132D46] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <span class="text-stone-950">Quieres lanzar tu primer eCommerce con una <strong>base sólida</strong>.</span>
+            </div>
+            <div class="bg-white border border-stone-200 rounded-xl p-4 flex items-start gap-3">
+              <svg class="w-6 h-6 text-[#5CAB94] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
               </svg>
-              <span>Eres creador con comunidad y quieres monetizar de forma estratégica.</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="w-6 h-6 text-[#132D46] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <span class="text-stone-950">Eres creador con comunidad y quieres monetizar de forma <strong>estratégica</strong>.</span>
+            </div>
+            <div class="bg-white border border-stone-200 rounded-xl p-4 flex items-start gap-3">
+              <svg class="w-6 h-6 text-[#5CAB94] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
               </svg>
-              <span>Eres emprendedor y buscas diversificar ingresos de forma inteligente.</span>
-            </li>
-          </ul>
+              <span class="text-stone-950">Eres emprendedor y buscas diversificar ingresos de forma <strong>inteligente</strong>.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banda CTA workshops -->
+    <section id="cta-banda-workshops" class="section-padding bg-dark-radial-gradient text-white">
+      <div class="container-max text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8">
+          ¿Estás listo para diseñar tu modelo de negocio?
+        </h2>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#cta-final"
+            class="bg-[#5CAB94] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#4a9a82] transition-all shadow-xl inline-block">
+            Registrarme ahora
+          </a>
         </div>
       </div>
     </section>
@@ -325,110 +341,70 @@
       </div>
     </section>
 
-    <!-- Escasez -->
-    <section id="scarcity" class="section-padding bg-dark-radial-gradient text-white">
-      <div class="container-max px-6">
-        <div class="max-w-5xl mx-auto">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8 mb-8">
-            <div>
-              <h2 class="text-3xl md:text-4xl font-bold mb-2">Solo por tiempo limitado</h2>
-              <p class="text-white/70 max-w-xl">
-                La preventa tiene plazas y fechas limitadas. Asegura tu lugar antes de que cambie el precio o se agoten
-                los cupos.
-              </p>
-            </div>
-            <div class="bg-black/40 border border-white/10 rounded-2xl px-6 py-4 text-center">
-              <p class="text-xs uppercase tracking-[0.25em] text-[#01C38D]/70 mb-2">La preventa termina en</p>
-              <div id="countdown-timer" class="flex justify-center gap-4 text-sm">
-                <!-- Se rellena con JS -->
-              </div>
-            </div>
-          </div>
-
-          <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-black/30 border border-white/10 rounded-2xl p-6">
-              <h3 class="text-lg font-semibold mb-2">Preventa activa hasta el día X</h3>
-              <p class="text-white/70">
-                Accede al precio preferencial antes del próximo ajuste.
-              </p>
-            </div>
-            <div class="bg-black/30 border border-white/10 rounded-2xl p-6">
-              <h3 class="text-lg font-semibold mb-2">Los precios suben pronto</h3>
-              <p class="text-white/70">
-                Los precios aumentarán a medida que se acerque la fecha del workshop.
-              </p>
-            </div>
-            <div class="bg-black/30 border border-white/10 rounded-2xl p-6">
-              <h3 class="text-lg font-semibold mb-2">Cupos limitados</h3>
-              <p class="text-white/70">
-                Trabajamos con grupos pequeños para mantener el enfoque práctico y personalizado.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Pricing -->
     <section id="pricing" class="section-padding bg-stone-50">
       <div class="container-max px-6">
         <div class="max-w-4xl mx-auto text-center mb-10">
-          <h2 class="text-3xl md:text-4xl font-bold text-stone-950 mb-4">Precios y preventa</h2>
-          <p class="text-lg text-stone-600">
-            Elige el momento que mejor se adapte a ti. Los precios suben a medida que se acerca la fecha del workshop.
-          </p>
+          <h2 class="text-3xl md:text-4xl font-bold text-stone-950 mb-6">Precios y preventa</h2>
+          <div class="bg-stone-900 border border-stone-700 rounded-2xl px-6 py-4 text-center inline-block">
+            <p class="text-xs uppercase tracking-[0.25em] text-[#5CAB94]/70 mb-2">La preventa termina en</p>
+            <div id="countdown-timer" class="flex justify-center gap-4 text-sm" data-countdown-target="">
+              <!-- Se rellena con JS -->
+            </div>
+          </div>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto font-sans">
           <!-- Early Bird -->
-          <div class="bg-white border border-[#132D46]/30 rounded-2xl p-6 flex flex-col">
-            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#132D46] mb-2">EARLY BIRD</p>
-            <h3 class="text-lg font-semibold mb-2">Tarjeta 1 — Early Bird</h3>
+          <div class="bg-white border border-[#132D46]/30 rounded-2xl p-6 flex flex-col font-sans">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#132D46] mb-2 font-sans">EARLY BIRD</p>
+            <h3 class="text-lg font-semibold mb-2 font-sans">Tarjeta 1 — Early Bird</h3>
             <div class="mb-4">
-              <p class="text-3xl font-bold text-stone-950">$75</p>
-              <p class="text-sm text-stone-500 line-through mt-1">$150 · Precio normal</p>
+              <p class="text-3xl font-bold text-stone-950 font-sans">$75</p>
+              <p class="text-sm text-stone-500 line-through mt-1 font-sans">$150 · Precio normal</p>
+              <p class="text-sm text-[#5CAB94] font-semibold mt-1 font-sans">Ahorras $75</p>
             </div>
-            <p class="text-sm text-stone-600 mb-4">Disponible hasta el día X.</p>
             <a href="https://buy.stripe.com/14A5kCacd6aFc616YJfjG06" target="_blank"
-              class="btn-primary w-full mt-auto text-center">Comprar preventa</a>
+              class="btn-primary w-full mt-auto text-center font-sans">Comprar preventa</a>
           </div>
 
           <!-- Precio normal -->
-          <div class="bg-white border border-stone-200 rounded-2xl p-6 flex flex-col">
-            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500 mb-2">Precio normal</p>
-            <h3 class="text-lg font-semibold mb-2">Tarjeta 2 — Precio Normal</h3>
+          <div class="bg-white border border-stone-200 rounded-2xl p-6 flex flex-col font-sans">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500 mb-2 font-sans">Precio normal</p>
+            <h3 class="text-lg font-semibold mb-2 font-sans">Tarjeta 2 — Precio Normal</h3>
             <div class="mb-4">
-              <p class="text-3xl font-bold text-stone-950">$100</p>
+              <p class="text-3xl font-bold text-stone-950 font-sans">$100</p>
+              <p class="text-sm text-stone-500 line-through mt-1 font-sans">$150 · Precio normal</p>
+              <p class="text-sm text-[#5CAB94] font-semibold mt-1 font-sans">Ahorras $50</p>
             </div>
-            <p class="text-sm text-stone-600 mb-4">Precio vigente del día X al día Y.</p>
             <a href="https://buy.stripe.com/4gM7sK701eHb1rnfvffjG07" target="_blank"
-              class="btn-secondary w-full mt-auto text-center">Comprar ahora</a>
+              class="btn-secondary w-full mt-auto text-center font-sans">Comprar ahora</a>
           </div>
 
           <!-- Last Chance -->
-          <div class="bg-white border border-stone-200 rounded-2xl p-6 flex flex-col">
-            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-red-500 mb-2">Last Chance</p>
-            <h3 class="text-lg font-semibold mb-2">Tarjeta 3 — Last Chance</h3>
+          <div class="bg-white border border-stone-200 rounded-2xl p-6 flex flex-col font-sans">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-red-500 mb-2 font-sans">Last Chance</p>
+            <h3 class="text-lg font-semibold mb-2 font-sans">Tarjeta 3 — Last Chance</h3>
             <div class="mb-4">
-              <p class="text-3xl font-bold text-stone-950">$150</p>
+              <p class="text-3xl font-bold text-stone-950 font-sans">$150</p>
+              <p class="text-sm text-stone-500 line-through mt-1 font-sans">$150 · Precio normal</p>
+              <p class="text-sm text-[#5CAB94] font-semibold mt-1 font-sans">Sin ahorro</p>
             </div>
-            <p class="text-sm text-stone-600 mb-4">Última oportunidad · queda poco tiempo.</p>
             <a href="https://buy.stripe.com/28E14m845dD75HD96RfjG08" target="_blank"
-              class="btn-secondary w-full mt-auto text-center">Asegurar mi lugar</a>
+              class="btn-secondary w-full mt-auto text-center font-sans">Asegurar mi lugar</a>
           </div>
 
           <!-- Paquete grupal -->
-          <div class="bg-white border border-stone-200 rounded-2xl p-6 flex flex-col">
-            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500 mb-2">Paquete grupal</p>
-            <h3 class="text-lg font-semibold mb-2">Tarjeta 4 — Paquete de 3</h3>
+          <div class="bg-white border border-stone-200 rounded-2xl p-6 flex flex-col font-sans">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500 mb-2 font-sans">Paquete grupal</p>
+            <h3 class="text-lg font-semibold mb-2 font-sans">Tarjeta 4 — Paquete de 3</h3>
             <div class="mb-4">
-              <p class="text-3xl font-bold text-stone-950">$210</p>
+              <p class="text-3xl font-bold text-stone-950 font-sans">$210</p>
+              <p class="text-sm text-stone-500 line-through mt-1 font-sans">$450 · Precio normal (3x$150)</p>
+              <p class="text-sm text-[#5CAB94] font-semibold mt-1 font-sans">Ahorras $240 total</p>
             </div>
-            <p class="text-sm text-stone-600 mb-4">
-              Trae a 3 amigos y ahorra. Precio especial por grupo.
-            </p>
             <a href="https://buy.stripe.com/fZu00i84542x3zvgzjfjG09" target="_blank"
-              class="btn-secondary w-full mt-auto text-center">Comprar con amigos</a>
+              class="btn-secondary w-full mt-auto text-center font-sans">Comprar con amigos</a>
           </div>
         </div>
 
@@ -556,91 +532,20 @@
     </section>
 
     <!-- CTA final con formulario -->
-    <section id="cta-final" class="section-padding bg-dark-radial-gradient text-white">
+    <section id="cta-final" class="section-padding bg-[#191E29] text-white/60">
       <div class="container-max px-6">
-        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-start">
-          <div>
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">
-              ¿Listo para transformar tu forma de hacer eCommerce?
-            </h2>
-            <p class="text-lg text-white/80 mb-6">
-              Asegura tu lugar antes de que cambie el precio o se acaben los lugares.
-            </p>
-            <a href="#cta-final"
-              class="inline-flex items-center gap-2 bg-[#01C38D] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#01A877] transition-all shadow-lg mb-6">
-              Quiero unirme al workshop
-            </a>
-            <p class="text-sm text-white/70">
-              Trabajaremos en directo para que salgas con un modelo de negocio claro, estructurado y accionable. No
-              necesitas experiencia previa: solo ganas de construir algo con sentido.
-            </p>
-          </div>
-          <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur">
-            <form id="workshop-registration-form-2" method="POST" action="/api/workshop/register" class="space-y-4">
-              <div class="form-group">
-                <label for="name" class="form-label text-white">Nombre</label>
-                <input id="name" name="name" type="text" required placeholder="Tu nombre completo"
-                  class="form-input bg-white/90">
-              </div>
-              <div class="form-group">
-                <label for="email" class="form-label text-white">Email</label>
-                <input id="email" name="email" type="email" required placeholder="tu@correo.com"
-                  class="form-input bg-white/90">
-              </div>
-              <div class="form-group">
-                <label for="phone" class="form-label text-white">Teléfono de contacto</label>
-                <input id="phone" name="phone" type="tel" placeholder="Incluye código de país si aplica"
-                  class="form-input bg-white/90">
-              </div>
-              <div class="form-group">
-                <label for="country" class="form-label text-white">País</label>
-                <input id="country" name="country" type="text" required placeholder="Ej: España, México, Argentina…"
-                  class="form-input bg-white/90">
-              </div>
-              <div class="form-group">
-                <label for="ecommerceSituation" class="form-label text-white">Situación de eCommerce</label>
-                <select id="ecommerceSituation" name="ecommerceSituation" required
-                  class="form-input bg-white/90 appearance-none">
-                  <option value="">Selecciona una opción</option>
-                  <option value="sin-tienda-pero-interesado">
-                    Nunca he tenido una tienda online, pero me interesa aprender y lanzar una.
-                  </option>
-                  <option value="intentos-sin-estructura">
-                    He intentado vender algo online (por Instagram, WhatsApp, etc.), pero sin estructura ni resultados.
-                  </option>
-                  <option value="tuve-tienda-la-cerre">
-                    Tuve una tienda, pero la cerré, y me gustaría hacerlo mejor si vuelvo a intentarlo.
-                  </option>
-                  <option value="preparando-tienda">
-                    Estoy preparando mi tienda, estoy en fase de planificación o desarrollo.
-                  </option>
-                  <option value="tienda-activa">
-                    Tengo una tienda activa, pero quiero mejorar mis resultados o escalarla.
-                  </option>
-                  <option value="no-seguro-pero-curiosidad">
-                    Aún no estoy seguro si quiero abrir una tienda, pero me interesa entender cómo funciona el
-                    eCommerce.
-                  </option>
-                </select>
-              </div>
-              <p class="text-xs text-white/70">
-                Al enviar este formulario aceptas nuestra política de privacidad y el tratamiento de tus datos para
-                gestionar tu plaza en el workshop.
-              </p>
-              <button type="submit" class="btn-primary w-full mt-2">
-                Reservar mi lugar
-              </button>
-            </form>
+        <div class="max-w-2xl mx-auto">
+          <div class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm">
+            <div class="klaviyo-form-Ygp7gZ"></div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer simplificado con logo y enlaces legales / redes -->
   <footer class="bg-[#191E29] text-white/60 py-12">
     <div class="container-max px-6">
-      <div class="grid md:grid-cols-3 gap-8 mb-8">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
         <div>
           <a href="index.html" class="mb-4 block">
             <img src="img/logo.svg" alt="Clairo" class="h-5 w-auto brightness-0 invert">
@@ -650,26 +555,31 @@
           </p>
         </div>
         <div>
-          <h4 class="font-semibold text-white mb-4">Legal</h4>
+          <h4 class="font-semibold text-white mb-4">Workshops</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="/legal/aviso-legal" class="hover:text-white transition-colors">Aviso legal</a></li>
-            <li><a href="/legal/politica-de-privacidad" class="hover:text-white transition-colors">Política de
-                privacidad</a></li>
-            <li><a href="/legal/politica-de-cookies" class="hover:text-white transition-colors">Política de
-                cookies</a></li>
+            <li><a href="workshops.html" class="hover:text-white transition-colors">Ver todos</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="font-semibold text-white mb-4">Contacto</h4>
+          <h4 class="font-semibold text-white mb-4">Casos</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="mailto:contacto@clairo.es" class="hover:text-white transition-colors">contacto@clairo.es</a>
-            </li>
-            <li class="hover:text-white transition-colors">+34 000 000 000</li>
-            <li class="flex gap-4 text-sm mt-2">
-              <a href="https://www.instagram.com/clairo_ecommerce/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Instagram</a>
-              <a href="https://www.tiktok.com/@clairo_ecommerce" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">TikTok</a>
-              <a href="https://www.linkedin.com/company/clairoecommerce" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">LinkedIn</a>
-            </li>
+            <li><a href="casos.html" class="hover:text-white transition-colors">Casos de éxito</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Clairo</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="sobre-clairo.html" class="hover:text-white transition-colors">Sobre nosotros</a></li>
+            <li><a href="contacto.html" class="hover:text-white transition-colors">Contacto</a></li>
+          </ul>
+          <h4 class="font-semibold text-white mb-4 mt-6">Redes</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://www.instagram.com/clairo_ecommerce/" target="_blank" rel="noopener noreferrer"
+                class="hover:text-white transition-colors">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@clairo_ecommerce" target="_blank" rel="noopener noreferrer"
+                class="hover:text-white transition-colors">TikTok</a></li>
+            <li><a href="https://www.linkedin.com/company/clairoecommerce" target="_blank" rel="noopener noreferrer"
+                class="hover:text-white transition-colors">LinkedIn</a></li>
           </ul>
         </div>
       </div>
@@ -680,6 +590,15 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <!-- Klaviyo -->
+  <script async type="text/javascript"
+    src="https://www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
+  <script async type='text/javascript'
+    src='https://static.klaviyo.com/onsite/js/Ym5maE/klaviyo.js?company_id=Ym5maE'></script>
+  <script type="text/javascript">
+    //Initialize Klaviyo object on page load
+    !function () { if (!window.klaviyo) { window._klOnsite = window._klOnsite || []; try { window.klaviyo = new Proxy({}, { get: function (n, i) { return "push" === i ? function () { var n; (n = window._klOnsite).push.apply(n, arguments) } : function () { for (var n = arguments.length, o = new Array(n), w = 0; w < n; w++)o[w] = arguments[w]; var t = "function" == typeof o[o.length - 1] ? o.pop() : void 0, e = new Promise((function (n) { window._klOnsite.push([i].concat(o, [function (i) { t && t(i), n(i) }])) })); return e } } }) } catch (n) { window.klaviyo = window._klOnsite || [], window.klaviyo.push = function () { var n; (n = window._klOnsite).push.apply(n, arguments) } } } }();
+  </script>
   <script>
     // Scroll suave para anclas internas
     document.addEventListener('DOMContentLoaded', function () {
@@ -700,7 +619,7 @@
       // Contador regresivo sencillo
       const countdownEl = document.getElementById('countdown-timer');
       if (countdownEl) {
-        // Ajusta esta fecha según tu preventa real
+        // Puedes actualizar esta fecha según tu preventa real
         const targetDate = new Date();
         targetDate.setDate(targetDate.getDate() + 7);
 
@@ -719,15 +638,15 @@
 
           countdownEl.innerHTML = `
             <div class="flex flex-col items-center px-3">
-              <span class="text-2xl font-semibold">${days}</span>
+              <span class="text-2xl font-semibold text-white">${days}</span>
               <span class="text-[11px] uppercase tracking-[0.2em] text-white/60">días</span>
             </div>
             <div class="flex flex-col items-center px-3">
-              <span class="text-2xl font-semibold">${hours}</span>
+              <span class="text-2xl font-semibold text-white">${hours}</span>
               <span class="text-[11px] uppercase tracking-[0.2em] text-white/60">horas</span>
             </div>
             <div class="flex flex-col items-center px-3">
-              <span class="text-2xl font-semibold">${minutes}</span>
+              <span class="text-2xl font-semibold text-white">${minutes}</span>
               <span class="text-[11px] uppercase tracking-[0.2em] text-white/60">min</span>
             </div>
           `;
