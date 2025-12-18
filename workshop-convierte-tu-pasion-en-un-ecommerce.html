@@ -92,8 +92,11 @@
 
   <main>
     <!-- Hero -->
-    <section id="hero" class="bg-dark-radial-gradient-top text-white pt-36 pb-20">
-      <div class="container-max px-6">
+    <section id="hero" class="bg-dark-radial-gradient-top text-white pt-36 pb-20 relative overflow-hidden">
+      <div class="absolute inset-0 -z-0"
+        style="background-image: linear-gradient(to bottom, rgba(25, 30, 41, 0.55), rgba(25, 30, 41, 0.85)), url('img/1.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+      </div>
+      <div class="container-max px-6 relative z-10">
         <div class="max-w-4xl mx-auto text-center">
           <div>
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
@@ -118,26 +121,26 @@
     <section id="quick-info" class="section-padding bg-stone-50">
       <div class="container-max px-6">
         <div class="max-w-5xl mx-auto">
-          <div class="flex flex-wrap justify-center gap-4 mb-10">
-            <span class="chip"
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+            <span class="chip w-full justify-center"
               style="background: rgba(92, 171, 148, 0.15); border-color: rgba(92, 171, 148, 0.4); color: #5CAB94; border-radius: 0.5rem; padding: 1.5rem 2.5rem; font-size: 1.25rem;">
               <span class="material-symbols-outlined"
                 style="font-family: 'Material Symbols Outlined' !important; font-size: 1.75rem;">event</span>
               <span>1 sesión</span>
             </span>
-            <span class="chip"
+            <span class="chip w-full justify-center"
               style="background: rgba(147, 197, 253, 0.15); border-color: rgba(147, 197, 253, 0.4); color: #93C5FD; border-radius: 0.5rem; padding: 1.5rem 2.5rem; font-size: 1.25rem;">
               <span class="material-symbols-outlined"
                 style="font-family: 'Material Symbols Outlined' !important; font-size: 1.75rem;">schedule</span>
               <span>180 minutos</span>
             </span>
-            <span class="chip"
+            <span class="chip w-full justify-center"
               style="background: rgba(251, 146, 60, 0.15); border-color: rgba(251, 146, 60, 0.4); color: #FB923C; border-radius: 0.5rem; padding: 1.5rem 2.5rem; font-size: 1.25rem;">
               <span class="material-symbols-outlined"
                 style="font-family: 'Material Symbols Outlined' !important; font-size: 1.75rem;">videocam</span>
               <span>En vivo</span>
             </span>
-            <span class="chip"
+            <span class="chip w-full justify-center"
               style="background: rgba(168, 85, 247, 0.15); border-color: rgba(168, 85, 247, 0.4); color: #A855F7; border-radius: 0.5rem; padding: 1.5rem 2.5rem; font-size: 1.25rem;">
               <span class="material-symbols-outlined"
                 style="font-family: 'Material Symbols Outlined' !important; font-size: 1.75rem;">group</span>
@@ -221,8 +224,12 @@
             </div>
             <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6">
               <div class="flex items-start gap-3 mb-3">
-                <span class="material-symbols-outlined text-[#FB923C] text-3xl"
-                  style="font-family: 'Material Symbols Outlined' !important;">psychology</span>
+                <svg class="w-8 h-8 mt-0.5 text-[#FB923C] shrink-0" fill="currentColor" fill-rule="evenodd"
+                  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="Perplexity">
+                  <title>Perplexity</title>
+                  <path
+                    d="M19.785 0v7.272H22.5V17.62h-2.935V24l-7.037-6.194v6.145h-1.091v-6.152L4.392 24v-6.465H1.5V7.188h2.884V0l7.053 6.494V.19h1.09v6.49L19.786 0zm-7.257 9.044v7.319l5.946 5.234V14.44l-5.946-5.397zm-1.099-.08l-5.946 5.398v7.235l5.946-5.234V8.965zm8.136 7.58h1.844V8.349H13.46l6.105 5.54v2.655zm-8.982-8.28H2.59v8.195h1.8v-2.576l6.192-5.62zM5.475 2.476v4.71h5.115l-5.115-4.71zm13.219 0l-5.115 4.71h5.115v-4.71z" />
+                </svg>
                 <h3 class="text-xl font-semibold">Ejercicios prácticos guiados con Perplexity</h3>
               </div>
               <p class="text-stone-600">
@@ -370,13 +377,24 @@
     <!-- Pricing -->
     <section id="pricing" class="section-padding bg-stone-50">
       <div class="container-max px-6">
-        <div class="max-w-4xl mx-auto text-center mb-10">
-          <h2 class="text-3xl md:text-4xl font-bold text-stone-950 mb-6">Precios y preventa</h2>
-          <div class="bg-stone-900 border border-stone-700 rounded-2xl px-6 py-4 text-center inline-block">
-            <p class="text-xs uppercase tracking-[0.25em] text-[#5CAB94]/70 mb-2">La preventa termina en</p>
-            <div id="countdown-timer" class="flex justify-center gap-4 text-sm" data-countdown-target="">
+        <div class="max-w-6xl mx-auto mb-10">
+          <h2 class="text-3xl md:text-4xl font-bold text-stone-950 mb-6 text-center">Precios y preventa</h2>
+
+          <div
+            class="bg-dark-radial-gradient-top rounded-2xl px-6 py-6 md:py-7 flex flex-col md:flex-row md:items-center md:justify-between gap-6 border border-white/10">
+            <div class="text-white">
+              <p class="text-4xl md:text-5xl font-bold leading-none">Preventa</p>
+              <p class="text-white/80 text-lg leading-tight">Hasta el día X</p>
+            </div>
+
+            <div id="countdown-timer" class="flex gap-5 justify-start md:justify-center flex-wrap">
               <!-- Se rellena con JS -->
             </div>
+
+            <a href="#cta-final"
+              class="bg-[#5CAB94] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#4a9a82] transition-all shadow-lg inline-block text-center">
+              Registrarme ahora
+            </a>
           </div>
         </div>
 
@@ -391,7 +409,7 @@
               <p class="text-sm text-[#5CAB94] font-semibold mt-1 font-sans">Ahorras $10</p>
             </div>
             <a href="https://buy.stripe.com/28E6oG7016aFee9erbfjG01" target="_blank"
-              class="btn-primary w-full mt-auto text-center font-sans">Comprar preventa</a>
+              class="btn-primary btn-radius-match w-full mt-auto text-center font-sans">Comprar preventa</a>
           </div>
 
           <!-- Estándar -->
@@ -421,16 +439,16 @@
           </div>
 
           <!-- Grupal -->
-          <div class="bg-white border border-stone-200 rounded-2xl p-6 flex flex-col font-sans">
-            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500 mb-2 font-sans">Paquete grupal</p>
-            <h3 class="text-lg font-semibold mb-2 font-sans">Paquete de 3</h3>
+          <div class="bg-[#5CAB94] border border-[#5CAB94] rounded-2xl p-6 flex flex-col font-sans text-white">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-white/80 mb-2 font-sans">Paquete grupal</p>
+            <h3 class="text-lg font-semibold mb-2 font-sans text-white">Paquete de 3</h3>
             <div class="mb-4">
-              <p class="text-3xl font-bold text-stone-950 font-sans">$30</p>
-              <p class="text-sm text-stone-500 line-through mt-1 font-sans">$105 · Precio normal (3x$35)</p>
-              <p class="text-sm text-[#5CAB94] font-semibold mt-1 font-sans">Ahorras $15 total</p>
+              <p class="text-3xl font-bold text-white font-sans">$30</p>
+              <p class="text-sm text-white/70 line-through mt-1 font-sans">$105 · Precio normal (3x$35)</p>
+              <p class="text-sm text-white font-semibold mt-1 font-sans">Ahorras $15 total</p>
             </div>
             <a href="https://buy.stripe.com/14A4gy5VXgPjgmh1EpfjG04" target="_blank"
-              class="btn-secondary w-full mt-auto text-center font-sans">Comprar con amigos</a>
+              class="w-full mt-auto text-center font-sans bg-[#191E29] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#191E29]/90 transition-all">Comprar con amigos</a>
           </div>
         </div>
 
@@ -438,9 +456,9 @@
         <div class="max-w-3xl mx-auto mt-12 text-center text-sm text-stone-600">
           <p class="font-medium mb-2">Pago seguro</p>
           <p class="mb-4">Procesamos los pagos con proveedores de confianza.</p>
-          <div class="flex justify-center gap-6 text-xs uppercase tracking-[0.2em] text-stone-500">
-            <span>Stripe</span>
-            <span>PayPal</span>
+          <div class="flex justify-center items-center gap-8">
+            <img src="img/Stripe.png" alt="Stripe" class="h-6 w-auto opacity-80">
+            <img src="img/PayPal.webp" alt="PayPal" class="h-6 w-auto opacity-80">
           </div>
         </div>
       </div>
@@ -455,31 +473,30 @@
           </h2>
           <div class="grid md:grid-cols-2 gap-6">
             <div class="bg-stone-50 border-l-4 border-[#132D46] rounded-r-2xl p-6">
-              <p class="text-stone-700 italic mb-4">
-                "Llegué con muchas ideas y salí con una oportunidad clara. Por primera vez sentí que tenía un camino
-                concreto para avanzar."
+              <p class="text-stone-700 mb-4">
+                Llegué con muchas ideas y salí con una oportunidad clara. Por primera vez sentí que tenía un camino
+                concreto para avanzar.
               </p>
               <p class="text-sm font-semibold text-stone-900">Ana · <span class="text-stone-600">Perú</span></p>
             </div>
             <div class="bg-stone-50 border-l-4 border-[#132D46] rounded-r-2xl p-6">
-              <p class="text-stone-700 italic mb-4">
-                "Pensaba que eCommerce era lanzar productos y esperar ventas. Ahora entiendo cómo elegir algo que
-                realmente tenga sentido para mí y para el mercado."
+              <p class="text-stone-700 mb-4">
+                Pensaba que eCommerce era lanzar productos y esperar ventas. Ahora entiendo cómo elegir algo que
+                realmente tenga sentido para mí y para el mercado.
               </p>
               <p class="text-sm font-semibold text-stone-900">Javier · <span class="text-stone-600">México</span></p>
             </div>
             <div class="bg-stone-50 border-l-4 border-[#132D46] rounded-r-2xl p-6">
-              <p class="text-stone-700 italic mb-4">
-                "Clairo me ayudó a ver mis pasiones desde una perspectiva estratégica y me fascina la forma práctica en
-                la que te enseñan el contenido."
+              <p class="text-stone-700 mb-4">
+                Clairo me ayudó a ver mis pasiones desde una perspectiva estratégica y me fascina la forma práctica en
+                la que te enseñan el contenido.
               </p>
               <p class="text-sm font-semibold text-stone-900">Mariana · <span class="text-stone-600">España</span></p>
             </div>
             <div class="bg-stone-50 border-l-4 border-[#132D46] rounded-r-2xl p-6">
-              <p class="text-stone-700 italic mb-4">
-                "Probé cursos antes, pero este fue diferente: trabajas sobre tu caso real y sales con un producto
-                viable,
-                no con teoría."
+              <p class="text-stone-700 mb-4">
+                Probé cursos antes, pero este fue diferente: trabajas sobre tu caso real y sales con un producto viable,
+                no con teoría.
               </p>
               <p class="text-sm font-semibold text-stone-900">Luis · <span class="text-stone-600">Colombia</span></p>
             </div>
@@ -678,7 +695,7 @@
         });
       });
 
-      // Contador regresivo sencillo
+      // Contador regresivo (Preventa)
       const countdownEl = document.getElementById('countdown-timer');
       if (countdownEl) {
         // Puedes actualizar esta fecha según tu preventa real
@@ -690,32 +707,37 @@
           const distance = targetDate.getTime() - now;
 
           if (distance <= 0) {
-            countdownEl.textContent = 'La preventa actual ha finalizado.';
+            countdownEl.innerHTML = `<span class="text-white/80">La preventa actual ha finalizado.</span>`;
             return;
           }
 
           const days = Math.floor(distance / (1000 * 60 * 60 * 24));
           const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
           const minutes = Math.floor((distance / (1000 * 60)) % 60);
+          const seconds = Math.floor((distance / 1000) % 60);
 
           countdownEl.innerHTML = `
-            <div class="flex flex-col items-center px-3">
-              <span class="text-2xl font-semibold text-white">${days}</span>
-              <span class="text-[11px] uppercase tracking-[0.2em] text-white/60">días</span>
+            <div class="flex flex-col items-center gap-2">
+              <span class="text-white font-semibold text-sm">Días</span>
+              <span class="bg-white rounded-lg px-4 py-2 text-[#5CAB94] text-4xl font-bold leading-none min-w-[72px] text-center">${days}</span>
             </div>
-            <div class="flex flex-col items-center px-3">
-              <span class="text-2xl font-semibold text-white">${hours}</span>
-              <span class="text-[11px] uppercase tracking-[0.2em] text-white/60">horas</span>
+            <div class="flex flex-col items-center gap-2">
+              <span class="text-white font-semibold text-sm">Horas</span>
+              <span class="bg-white rounded-lg px-4 py-2 text-[#5CAB94] text-4xl font-bold leading-none min-w-[72px] text-center">${hours}</span>
             </div>
-            <div class="flex flex-col items-center px-3">
-              <span class="text-2xl font-semibold text-white">${minutes}</span>
-              <span class="text-[11px] uppercase tracking-[0.2em] text-white/60">min</span>
+            <div class="flex flex-col items-center gap-2">
+              <span class="text-white font-semibold text-sm">Minutos</span>
+              <span class="bg-white rounded-lg px-4 py-2 text-[#5CAB94] text-4xl font-bold leading-none min-w-[72px] text-center">${minutes}</span>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <span class="text-white font-semibold text-sm">Segundos</span>
+              <span class="bg-white rounded-lg px-4 py-2 text-[#5CAB94] text-4xl font-bold leading-none min-w-[72px] text-center">${seconds}</span>
             </div>
           `;
         }
 
         updateCountdown();
-        setInterval(updateCountdown, 60000);
+        setInterval(updateCountdown, 1000);
       }
     });
   </script>

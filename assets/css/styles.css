@@ -582,6 +582,10 @@ body {
   box-shadow: 0 4px 12px rgba(92, 171, 148, 0.3);
 }
 
+.btn-primary.btn-radius-match {
+  border-radius: 0.5rem;
+}
+
 .btn-secondary {
   background-color: transparent;
   color: var(--color-text);
