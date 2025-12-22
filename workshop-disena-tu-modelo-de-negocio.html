@@ -104,7 +104,7 @@
               tienes una idea clara.
             </p>
             <div class="flex flex-wrap gap-4 justify-center">
-              <a href="#cta-final"
+              <a href="#pricing"
                 class="bg-[#5CAB94] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#4a9a82] transition-all shadow-lg">
                 Reserva tu lugar
               </a>
@@ -180,7 +180,7 @@
             </div>
           </div>
           <div class="text-center mt-8">
-            <a href="#cta-final"
+            <a href="#pricing"
               class="bg-[#5CAB94] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#4a9a82] transition-all shadow-lg inline-block">
               Registrarme ahora
             </a>
@@ -426,20 +426,20 @@
         <div class="max-w-2xl mx-auto mt-12">
           <div class="bg-white rounded-xl border border-stone-200 shadow-sm overflow-hidden">
             <!-- Barra superior -->
-            <div class="bg-stone-50 border-b border-stone-200 px-6 py-4 flex items-center justify-between">
+            <div class="bg-stone-50 border-b border-stone-200 px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
               <div class="flex items-center gap-3">
-                <svg class="w-5 h-5 text-stone-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-stone-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                 </svg>
-                <span class="text-sm font-medium text-stone-700">Pago seguro y protegido garantizado</span>
+                <span class="text-xs sm:text-sm font-medium text-stone-700">Pago seguro y protegido garantizado</span>
               </div>
-              <div class="bg-[#635BFF] text-white px-4 py-1.5 rounded text-xs font-semibold flex items-center gap-2">
+              <div class="bg-[#635BFF] text-white px-3 sm:px-4 py-1.5 rounded text-xs font-semibold flex items-center gap-2 shrink-0 hidden sm:flex">
                 <span>Powered by</span>
                 <img src="logos/Stripe_Logo,_revised_2016.svg" alt="Stripe" class="h-4 w-auto brightness-0 invert">
               </div>
             </div>
             <!-- Logos de tarjetas -->
-            <div class="px-6 py-5 flex flex-wrap justify-center items-center gap-3">
+            <div class="px-4 sm:px-6 py-5 flex flex-wrap justify-center items-center gap-3">
               <!-- VISA -->
               <div class="bg-white border border-stone-200 rounded-md px-3 py-2 flex items-center justify-center" style="min-width: 60px; height: 40px;">
                 <img src="logos/Visa_Inc._logo.svg" alt="VISA" class="h-6 w-auto object-contain">
@@ -451,6 +451,11 @@
               <!-- AMEX -->
               <div class="bg-white border border-stone-200 rounded-md px-3 py-2 flex items-center justify-center" style="min-width: 60px; height: 40px;">
                 <img src="logos/icon_-payment-amex.svg" alt="AMEX" class="h-16 w-auto object-contain">
+              </div>
+              <!-- Powered by Stripe - Solo visible en móvil -->
+              <div class="bg-[#635BFF] text-white px-3 py-2 rounded-md text-xs font-semibold flex items-center gap-2 sm:hidden" style="min-width: 60px; height: 40px;">
+                <span>Powered by</span>
+                <img src="logos/Stripe_Logo,_revised_2016.svg" alt="Stripe" class="h-4 w-auto brightness-0 invert">
               </div>
             </div>
           </div>
