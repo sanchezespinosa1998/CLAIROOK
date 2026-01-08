@@ -11,10 +11,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -34,7 +32,7 @@
         <nav class="nav-links">
           <a href="index.html" class="nav-link">Home</a>
           <div class="nav-dropdown relative">
-            <a href="workshops.html" class="nav-link">Workshops</a>
+            <a href="workshops.html" class="nav-link">Formaciones</a>
             <div
               class="nav-dropdown-menu absolute top-full left-1/2 -translate-x-1/2 w-64 bg-white/95 backdrop-blur-xl rounded-2xl border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.4)] p-4 opacity-0 invisible transition-all duration-300 pointer-events-none"
               style="margin-top: 0.75rem;">
@@ -53,8 +51,8 @@
                 Workshop de Clairo</a>
             </div>
           </div>
-          <a href="sobre-clairo.html" class="nav-link">Sobre Clairo</a>
-          <a href="casos.html" class="nav-link">Casos</a>
+          <a href="sobre-clairo.html" class="nav-link">¿Quiénes somos?</a>
+          <a href="contacto.html" class="nav-link">Contáctanos</a>
         </nav>
 
         <!-- CTA a la derecha -->
@@ -81,14 +79,15 @@
       <a href="index.html"
         class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">Home</a>
       <a href="workshops.html"
-        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">Workshops</a>
+        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">Formaciones</a>
       <a href="sobre-clairo.html"
-        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">Sobre
-        Clairo</a>
+        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">¿Quiénes
+        somos?</a>
       <a href="casos.html"
-        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">Casos</a>
+        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">Formación
+        corporativa</a>
       <a href="contacto.html"
-        class="text-sm font-medium text-white/80 hover:text-white uppercase tracking-wider py-2 px-4 rounded-full hover:bg-white/10 transition-all font-sans">Contacto</a>
+        class="text-sm font-medium text-white uppercase tracking-wider py-2 px-4 rounded-full bg-white/10 hover:bg-white/20 transition-all font-sans">Contáctanos</a>
     </div>
   </div>
 
@@ -97,10 +96,13 @@
     <section class="bg-gradient-to-br from-stone-50 to-white pt-32 pb-16 md:pt-36 md:pb-20">
       <div class="container-max px-6">
         <div class="max-w-3xl">
-          <h1 class="text-4xl md:text-5xl font-bold text-stone-950 mb-4">Ponte en contacto con Clairo</h1>
+          <h1 class="text-4xl md:text-5xl font-bold text-stone-950 mb-4">Hablemos de eCommerce con creatividad y
+            criterio</h1>
           <p class="text-lg md:text-xl text-stone-600 leading-relaxed">
-            Cuéntanos en qué punto estás y qué necesitas. Te respondemos con claridad, sin formularios infinitos ni
-            promesas vacías.
+            Si tienes dudas sobre nuestras formaciones,
+            representas una universidad, centro o empresa y buscas experiencias de aprendizaje grupales,
+            o tienes un proyecto de eCommerce en mente y quieres explorarlo con acompañamiento estratégico,
+            déjanos tus datos y nos pondremos en contacto contigo.
           </p>
         </div>
       </div>
@@ -118,121 +120,67 @@
               Puedes usar este formulario para dudas sobre workshops, facturación, colaboraciones o prensa.
             </p>
 
-            <form id="contact-form" method="POST" action="/api/contact" class="space-y-4">
-              <div class="form-group">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre completo"
-                  class="form-input">
-              </div>
-
-              <div class="form-group">
-                <label for="email" class="form-label">Email</label>
-                <input id="email" name="email" type="email" required placeholder="tu@correo.com" class="form-input">
-              </div>
-
-              <div class="form-group">
-                <label for="telefono" class="form-label">Teléfono de contacto</label>
-                <input id="telefono" name="telefono" type="tel" placeholder="+34 600 000 000" class="form-input">
-              </div>
-
-              <div class="form-group">
-                <label for="pais" class="form-label">País</label>
-                <input id="pais" name="pais" type="text" required placeholder="Ej: España, México, Argentina…"
-                  class="form-input">
-              </div>
-
-              <div class="form-group">
-                <label for="ecommerceSituation" class="form-label">Situación de eCommerce</label>
-                <select id="ecommerceSituation" name="ecommerceSituation" required class="form-input bg-white">
-                  <option value="">Selecciona una opción</option>
-                  <option value="sin-tienda-pero-interesado">
-                    Nunca he tenido una tienda online, pero me interesa aprender y lanzar una.
-                  </option>
-                  <option value="intentos-sin-estructura">
-                    He intentado vender algo online (por Instagram, WhatsApp, etc.), pero sin estructura ni resultados.
-                  </option>
-                  <option value="tuve-tienda-la-cerre">
-                    Tuve una tienda, pero la cerré, y me gustaría hacerlo mejor si vuelvo a intentarlo.
-                  </option>
-                  <option value="preparando-tienda">
-                    Estoy preparando mi tienda, estoy en fase de planificación o desarrollo.
-                  </option>
-                  <option value="tienda-activa">
-                    Tengo una tienda activa, pero quiero mejorar mis resultados o escalarla.
-                  </option>
-                  <option value="no-seguro-pero-curiosidad">
-                    Aún no estoy seguro si quiero abrir una tienda, pero me interesa entender cómo funciona el
-                    eCommerce.
-                  </option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="mensaje" class="form-label">Cuéntanos un poco más (opcional)</label>
-                <textarea id="mensaje" name="mensaje"
-                  placeholder="Contexto, dudas concretas, qué te gustaría conseguir..."
-                  class="form-textarea"></textarea>
-              </div>
-
-              <p class="text-xs text-stone-500">
-                Usaremos tus datos solo para responder a tu consulta, según nuestra política de privacidad.
-              </p>
-
-              <button type="submit" class="btn-primary w-full md:w-auto">
-                Enviar mensaje
-              </button>
-            </form>
+            <div class="klaviyo-form-W6fWKU"></div>
           </div>
 
-          <!-- Columna info rápida / WhatsApp -->
-          <aside class="space-y-6">
-            <div class="bg-dark-radial-gradient text-white rounded-2xl p-6">
-              <h2 class="text-lg font-semibold mb-3">Contacto rápido por WhatsApp</h2>
-              <p class="text-sm text-white/80 mb-4">
-                Si prefieres algo más directo, puedes escribirnos por WhatsApp y te respondemos en horario laboral.
-              </p>
-              <a href="https://wa.me/34600000000?text=Hola%20Clairo%2C%20necesito%20informaci%C3%B3n%20sobre%20los%20workshops"
-                target="_blank" rel="noopener"
-                class="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold transition-all shadow-lg w-full text-center">
-                <span>Escribir por WhatsApp</span>
-              </a>
-              <p class="text-[11px] text-white/70 mt-3">
-                Horario orientativo: Lunes a viernes, 10:00–18:00 (CET).
-              </p>
-            </div>
-
-            <div class="bg-stone-50 border border-stone-200 rounded-2xl p-6 text-sm text-stone-700 space-y-3">
-              <div>
-                <p class="font-semibold">Email</p>
-                <a href="mailto:contacto@clairo.es" class="text-[#132D46] hover:text-[#191E29]">
-                  contacto@clairo.es
-                </a>
-              </div>
-              <div>
-                <p class="font-semibold">Teléfono</p>
-                <a href="tel:+34000000000" class="text-stone-700 hover:text-stone-900">
-                  +34 000 000 000
-                </a>
-              </div>
-              <div>
-                <p class="font-semibold">Redes</p>
-                <ul class="mt-1 space-y-1">
-                  <li><a href="https://www.instagram.com/clairo_ecommerce/" target="_blank" rel="noopener noreferrer" class="hover:text-[#132D46]">Instagram</a></li>
-                  <li><a href="https://www.tiktok.com/@clairo_ecommerce" target="_blank" rel="noopener noreferrer" class="hover:text-[#132D46]">TikTok</a></li>
-                  <li><a href="https://www.linkedin.com/company/clairoecommerce" target="_blank" rel="noopener noreferrer" class="hover:text-[#132D46]">LinkedIn</a></li>
-                  <li><a href="https://www.youtube.com/@Clairoecommerce" target="_blank" rel="noopener noreferrer" class="hover:text-[#132D46]">YouTube</a></li>
-                </ul>
-              </div>
-            </div>
-          </aside>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer mínimo coherente -->
+  <!-- Footer con información de contacto -->
   <footer class="bg-[#191E29] text-white/60 py-12">
     <div class="container-max px-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h4 class="font-semibold text-white mb-4">Contacto</h4>
+          <div class="space-y-3 text-sm">
+            <div>
+              <p class="font-semibold">Email</p>
+              <a href="mailto:contacto@clairo.es" class="text-[#5CAB94] hover:text-[#4a9a82]">
+                contacto@clairo.es
+              </a>
+            </div>
+            <div>
+              <p class="font-semibold">Teléfono</p>
+              <a href="tel:+34000000000" class="text-white hover:text-white/80">
+                +34 000 000 000
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Redes</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://www.instagram.com/clairo_ecommerce/" target="_blank" rel="noopener noreferrer"
+                class="hover:text-[#5CAB94] transition-colors">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@clairo_ecommerce" target="_blank" rel="noopener noreferrer"
+                class="hover:text-[#5CAB94] transition-colors">TikTok</a></li>
+            <li><a href="https://www.linkedin.com/company/clairoecommerce" target="_blank" rel="noopener noreferrer"
+                class="hover:text-[#5CAB94] transition-colors">LinkedIn</a></li>
+            <li><a href="https://www.youtube.com/@Clairoecommerce" target="_blank" rel="noopener noreferrer"
+                class="hover:text-[#5CAB94] transition-colors">YouTube</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Legal</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/legal/aviso-legal" class="hover:text-white transition-colors">Aviso legal</a></li>
+            <li><a href="/legal/politica-de-privacidad" class="hover:text-white transition-colors">Política de
+                privacidad</a></li>
+            <li><a href="/legal/politica-de-cookies" class="hover:text-white transition-colors">Política de
+                cookies</a></li>
+          </ul>
+        </div>
+        <div>
+          <a href="index.html" class="mb-4 block">
+            <img src="logos/Logo Clairo Academy.svg" alt="Clairo" class="h-5 w-auto brightness-0 invert">
+          </a>
+          <p class="text-sm text-white/60">
+            Workshops de eCommerce con criterio, claridad y acción.
+          </p>
+        </div>
+      </div>
       <div class="border-t border-white/10 pt-8 text-center text-sm">
         <p>© 2024 Clairo. Todos los derechos reservados.</p>
       </div>
