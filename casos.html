@@ -9,8 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -29,7 +28,7 @@
         <nav class="nav-links">
           <a href="index.html" class="nav-link">Home</a>
           <div class="nav-dropdown relative">
-            <a href="workshops.html" class="nav-link">Workshops</a>
+            <a href="workshops.html" class="nav-link">Formaciones</a>
             <div
               class="nav-dropdown-menu absolute top-full left-1/2 -translate-x-1/2 w-64 bg-white/95 backdrop-blur-xl rounded-2xl border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.4)] p-4 opacity-0 invisible transition-all duration-300 pointer-events-none"
               style="margin-top: 0.75rem;">
@@ -48,13 +47,13 @@
                 Workshop de Clairo</a>
             </div>
           </div>
-          <a href="sobre-clairo.html" class="nav-link">Sobre Clairo</a>
-          <a href="casos.html" class="nav-link">Casos</a>
+          <a href="sobre-clairo.html" class="nav-link">¿Quiénes somos?</a>
+          <a href="casos.html" class="nav-link">Formación corporativa</a>
         </nav>
 
         <!-- CTA a la derecha -->
         <a href="contacto.html" class="nav-cta">
-          <span>CONTACTO</span>
+          <span>Contáctanos</span>
         </a>
 
         <!-- Botón móvil -->
@@ -95,27 +94,32 @@
       </div>
 
       <div class="container-max px-6 relative z-10">
-        <div class="max-w-4xl mx-auto text-center">
-          <!-- Contenido centrado -->
-          <div class="space-y-6">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              Casos de éxito y <span class="text-[#5CAB94]">testimonios</span>
-            </h1>
+        <div class="max-w-6xl mx-auto">
+          <div class="grid lg:grid-cols-2 gap-12 items-center justify-items-center">
+            <!-- Columna izquierda: Texto -->
+            <div class="space-y-6 text-center lg:text-left">
+              <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                Formación <span class="text-[#5CAB94]">corporativa</span>
+              </h1>
 
-            <p class="text-lg md:text-xl text-white/70 leading-relaxed">
-              Resultados reales de ecommerces que trabajaron con Clairo. Métricas concretas y testimonios de equipos que
-              aumentaron sus ventas identificando oportunidades accionables.
-            </p>
+              <p class="text-lg md:text-xl text-white/70 leading-relaxed">
+                Programas de formación personalizados para equipos que buscan escalar sus operaciones de eCommerce con
+                estrategia, claridad y resultados medibles.
+              </p>
 
-            <div class="flex flex-wrap gap-3 pt-4 justify-center">
-              <a href="workshops.html"
-                class="bg-[#5CAB94] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#4a9a82] transition-all shadow-xl inline-flex items-center gap-2 text-sm">
-                Ver workshops de Clairo
-              </a>
-              <a href="contacto.html"
-                class="px-6 py-3 rounded-full border border-white/20 text-sm font-semibold text-white/80 hover:bg-white/10 transition-all inline-flex items-center gap-2">
-                Hablar con Clairo
-              </a>
+              <div class="flex flex-wrap gap-3 pt-4 justify-center lg:justify-start">
+                <a href="#cta-final"
+                  class="bg-[#5CAB94] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#4a9a82] transition-all shadow-xl inline-flex items-center gap-2 text-sm">
+                  Solicitar más información
+                </a>
+              </div>
+            </div>
+
+            <!-- Columna derecha: Imagen -->
+            <div class="w-full flex justify-center">
+              <div class="w-full max-w-md aspect-square bg-stone-800 rounded-2xl flex items-center justify-center">
+                <span class="text-stone-600 text-6xl">🏢</span>
+              </div>
             </div>
           </div>
         </div>
@@ -135,28 +139,27 @@
       </div>
     </section>
 
-    <!-- Testimonios -->
-    <section class="py-16 bg-stone-50">
-      <div class="container-max px-6">
-        <h2 class="text-3xl font-bold mb-12 text-center">Testimonios</h2>
-        <div id="testimonios-list" class="max-w-5xl mx-auto">
-          <!-- Se rellena con JS -->
-          <div class="text-center py-12">
-            <p class="text-stone-500">Cargando testimonios...</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- CTA -->
     <section class="py-16 bg-dark-radial-gradient text-white">
       <div class="container-max px-6 text-center">
-        <h2 class="text-4xl font-bold mb-4">¿Quieres ser el próximo caso de éxito?</h2>
+        <h2 class="text-4xl font-bold mb-4">¿Interesado en formación corporativa?</h2>
         <p class="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-          Reserva un workshop y descubre las oportunidades de crecimiento en tu ecommerce.
+          Diseñamos programas personalizados para tu equipo y objetivos específicos.
         </p>
-        <a href="contacto.html"
-          class="bg-[#5CAB94] text-black px-8 py-4 rounded-full font-semibold hover:bg-[#4a9a82] transition-all shadow-xl inline-block">Contactar</a>
+        <a href="#cta-final"
+          class="bg-[#5CAB94] text-black px-8 py-4 rounded-full font-semibold hover:bg-[#4a9a82] transition-all shadow-xl inline-block">Solicitar
+          más información</a>
+      </div>
+    </section>
+
+    <!-- CTA final con formulario -->
+    <section id="cta-final" class="section-padding bg-[#191E29] text-white/60">
+      <div class="container-max px-6">
+        <div class="max-w-2xl mx-auto">
+          <div class="bg-white rounded-2xl p-8 border border-stone-200 shadow-sm">
+            <div class="klaviyo-form-W6fWKU"></div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
